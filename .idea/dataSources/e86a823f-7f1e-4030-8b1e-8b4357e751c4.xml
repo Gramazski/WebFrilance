@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - serverdb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="serverdb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="phpmyadmin"/>
+    <schema id="6" name="test"/>
+    <schema id="7" name="vebsite"/>
+    <table id="8" parent="1" name="userinfo"/>
+    <table id="9" parent="1" name="reguser"/>
+    <table id="10" parent="1" name="authuser"/>
+    <table id="11" parent="1" name="idtable"/>
+    <column id="12" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="13" parent="8" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="14" parent="8" name="imgLink">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="15" parent="8" name="years">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="16" parent="8" name="timeCreation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="17" parent="8" name="cost">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="18" parent="8" name="costFrom">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="19" parent="8" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="20" parent="8" name="minds">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="21" parent="8" name="works">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="22" parent="8" name="surname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="23" parent="8" name="birthday">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="24" parent="8" name="sex">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="25" parent="8" name="role">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="26" parent="8" name="login">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="27" parent="8" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="28" parent="8" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="29" parent="8" name="country">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="30" parent="8" name="points">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="31" parent="8" name="orders">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="32" parent="8" name="messages">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="33" parent="9" name="id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="9" name="name">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="35" parent="9" name="birthday">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="36" parent="9" name="sex">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="37" parent="9" name="role">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="38" parent="9" name="email">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="39" parent="9" name="login">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="40" parent="9" name="password">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="41" parent="9" name="surname">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="42" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="43" parent="10" name="login">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="44" parent="10" name="email">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="45" parent="10" name="password">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="46" parent="11" name="id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="47" parent="11" name="count">
+      <data-type>int(11)|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
