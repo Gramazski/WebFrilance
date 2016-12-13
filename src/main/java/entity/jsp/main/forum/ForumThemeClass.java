@@ -18,10 +18,6 @@ public class ForumThemeClass {
         this.imgLink = imgLink;
     }
 
-    public ForumThemeClass(String s, String s1, String s2, String s3) {
-
-    }
-
     public String getLink() {
         return link;
     }

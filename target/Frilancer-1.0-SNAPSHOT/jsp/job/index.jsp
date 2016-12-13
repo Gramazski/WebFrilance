@@ -6,7 +6,12 @@
     <c:import url="../static/header.jsp" />
 </head>
 <body>
-<c:import url="../static/menu.jsp" />
+<c:if test="${sessionFlag == true}">
+    <c:import url="/jsp/static/auth_menu.jsp" />
+</c:if>
+<c:if test="${sessionFlag != true}">
+    <c:import url="/jsp/static/menu.jsp" />
+</c:if>
 <div class="container">
     <div class="jumbotron">
         <c:set var="pageCreationFlag" value="${pageCreation}" scope="page"/>
@@ -19,7 +24,13 @@
                 <h2 style="margin-top: -5px">Удаленная работа для фрилансеров</h2>
             </div>
             <div class="col-sm-4">
-                <a href="/jsp/registration/" style="width: 100%" class="btn btn-large btn-success"> Set custom!</a>
+                <c:if test="${sessionFlag == true}">
+                    <a href="/jsp/job/creation/" style="width: 100%" class="btn btn-large btn-success"> Set custom!</a>
+                </c:if>
+                <c:if test="${sessionFlag != true}">
+                    <a href="/jsp/registration/" style="width: 100%" class="btn btn-large btn-success"> Set custom!</a>
+                </c:if>
+
             </div>
         </div>
 
@@ -38,26 +49,26 @@
                         <div class="row">
                             <div class="col-sm-7" style="margin-top: -10px; padding-bottom: 20px">
                                 <h4>
-                                    <a href="${jobForFrilancer.link}">${jobForFrilancer.title}</a>
+                                    <a href="/custom?projectInfo=${jobForFrilancer.name}">${jobForFrilancer.name}</a>
                                 </h4>
                             </div>
-                            <div class="col-sm-2">
-                                    ${jobForFrilancer.cost}
+                            <div class="col-sm-2" style="color: red">
+                                    ${jobForFrilancer.price}$
                             </div>
                             <div class="col-sm-3 text-right text-nowrap hidden-xs">
-                                    ${jobForFrilancer.orderCount}
+                                    0 заявок
                             </div>
                             <div class="col-xs-12" style="margin-top: -10px; margin-bottom: -10px">
-                                    ${jobForFrilancer.description}
+                                    ${jobForFrilancer.body}
                             </div>
                             <div class="col-xs-12 text-muted" style="margin-top: 2%">
-                                <a class="text-muted" href="${jobForFrilancer.jobTagLink}">${jobForFrilancer.jobTag}</a>
+                                <a class="text-muted" href="#">${jobForFrilancer.type}</a>
                                 <span class="divider">•</span>
                                 <span>
-                                <span data-toggle="tooltip" title="" data-timestamp="1478983442" class="time_ago" data-original-title="${jobForFrilancer.totalTime}">${jobForFrilancer.timeAgo}</span>
+                                <span data-toggle="tooltip" title="" data-timestamp="1478983442" class="time_ago" data-original-title="">${jobForFrilancer.timeAgo}</span>
                             </span>
                                 <span class="divider">•</span>
-                                    ${jobForFrilancer.jobType}
+                                    ${jobForFrilancer.type}
                             </div>
                         </div>
                         <hr style="margin-top: 2%; margin-bottom: 2%">
@@ -65,11 +76,6 @@
                 </div>
                 <div class="panel-footer">
                     <ul class="pagination pagination-lg">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
                         <li><a href="#">Previous</a></li>
                         <li><a href="#">Next</a></li>
                     </ul>

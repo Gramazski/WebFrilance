@@ -51,4 +51,12 @@ public class ProjectInfo {
     public void setMinds(ArrayList<CustomerMind> minds) {
         this.minds = minds;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

@@ -45,4 +45,28 @@ public class CustomInfo {
     public String getName() {
         return name;
     }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public String getCondition() {
+        return condition;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
 }

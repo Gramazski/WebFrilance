@@ -6,15 +6,16 @@
     <c:import url="../../static/header.jsp" />
 </head>
 <body>
-<c:import url="../../static/menu.jsp" />
+<c:if test="${sessionFlag == true}">
+    <c:import url="/jsp/static/auth_menu.jsp" />
+</c:if>
+<c:if test="${sessionFlag != true}">
+    <c:import url="/jsp/static/menu.jsp" />
+</c:if>
 <div class="container">
     <c:set var="projectInfo" value="${projectInfo}" scope="page"></c:set>
     <div class="jumbotron">
-        <c:set var="pageCreationFlag" value="${pageCreation}" scope="page"/>
-        <c:if test="${pageCreationFlag != 1}">
-            <c:redirect url="/projectcontrol"></c:redirect>
-        </c:if>
-        <c:remove var="pageCreationFlag"></c:remove>
+
         <div class="row">
             <div class="col-sm-8">
                 <h2 style="margin-top: -5px">${projectInfo.name}</h2>
@@ -53,7 +54,13 @@
                     <b class="h3">Ваша заявка к этому проекту</b>
                 </div>
                 <div class="panel-body">
-                    <a href="/jsp/registration">Войдите в аккаунт</a>, чтобы добавить заявку и открыть данные заказчика.
+                    <c:if test="${sessionFlag == true}">
+                        <a href="/controller?command=ADD_ORDER&custom=${projectInfo.name}" style="width: 100%" class="btn btn-large btn-success"> Оставить заявку!</a>
+                    </c:if>
+                    <c:if test="${sessionFlag != true}">
+                        <a href="/jsp/registration">Войдите в аккаунт</a>, чтобы добавить заявку и открыть данные заказчика.
+                    </c:if>
+
                 </div>
             </div>
             <div class="panel panel-default">
@@ -71,10 +78,10 @@
                                     <img src="${frilancerOrder.frilancer.imgLink}" class="media-object" style="width:70px">
                                 </div>
                                 <div class="media-body">
-                                    <a href="${frilancerOrder.frilancer.link}"><h4 class="media-heading">${frilancerOrder.frilancer.data}</h4></a>
+                                    <a href="#"><h4 class="media-heading">${frilancerOrder.frilancer.name}</h4></a>
                                     <p>${frilancerOrder.frilancer.years}</p>
-                                    <p>${frilancerOrder.frilancer.yearsInService}</p>
-                                    <a href="${frilancerOrder.frilancer.mindsLink}">Minds</a>
+                                    <p>с ${frilancerOrder.frilancer.dateCreation}</p>
+                                    <a href="#">Minds</a>
                                 </div>
                             </div>
                             <span class="text-nowrap top_label_box" style="margin-left: 2%">
@@ -160,8 +167,8 @@
                 </div>
                 <div class="panel-body">
                     <c:set var="stats" value="${stats}" scope="page"></c:set>
-                    <p>${stats.orderCount} заявки</p>
-                    <p>${stats.viewCount} watches</p>
+                    <p>${stats.open} заявки</p>
+                    <p>${stats.complete} watches</p>
                 </div>
             </div>
         </div>

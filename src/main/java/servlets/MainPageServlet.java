@@ -1,14 +1,18 @@
 package servlets;
 
+import DAO.UserInfoDAO;
+import DAO.forum.ForumThemeDAO;
+import DAO.project.custom.CustomInfoDAO;
+import DAO.project.info.ProjectInfoDAO;
 import entity.jsp.main.advertising.AdvertisingFrilancerClass;
-import entity.jsp.main.forum.ForumThemeClass;
 import entity.jsp.main.frilancer.FrilancerTopClass;
-import entity.jsp.main.job.JobForFrilancerClass;
 import entity.jsp.main.news.NewsClass;
 import entity.jsp.main.stats.ServiceStatsClass;
 import entity.jsp.main.title.PageTitleClass;
 import entity.jsp.main.title.PageTitleList;
-import entity.jsp.main.work.FrilancerWorkClass;
+import entity.project.custom.CustomInfo;
+import entity.project.info.ProjectInfo;
+import entity.user.info.UserInfo;
 import validator.session.SessionValidator;
 
 import javax.servlet.ServletException;
@@ -75,58 +79,42 @@ public class MainPageServlet extends HttpServlet {
     }
 
     private void createFrilancerWorkPanel(HttpServletRequest request){
-        ArrayList<FrilancerWorkClass> frilancerWorkClasses = new ArrayList<FrilancerWorkClass>();
-
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/music_site.jpg", "Pulpit Rock", "Good site on Node.js about music!"));
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/frontend.jpg", "Pulpit Rock", "Good site on Node.js about music!"));
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/java_site.jpg", "Pulpit Rock", "Lorem ipsum donec id elit non."));
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/js_scripts.jpg", "Pulpit Rock", "Good site on Node.js about music!"));
-
-        request.setAttribute("frilancerWorks", frilancerWorkClasses);
+        ProjectInfoDAO projectInfoDAO = new ProjectInfoDAO();
+        ArrayList<ProjectInfo> projectInfos = projectInfoDAO.getAllProjects();
+        request.setAttribute("frilancerWorks", projectInfos);
     }
 
     private void createJobPanel(HttpServletRequest request){
-        ArrayList<JobForFrilancerClass> jobForFrilancerClasses = new ArrayList<JobForFrilancerClass>();
-        jobForFrilancerClasses.add(new JobForFrilancerClass("#", "Программист в Игровой проект на постоянную удаленную работу", "$1500", "5 заявок",
-                "В команду из 6 программистов нужен сотрудник на постоянную основу для разработки и улучшения имеющихся игровых проектов связанных со Steam, WoT и E-commerce. 2+ млн посещаемости ежемесячно насчитывает...",
-                "Веб-программирование", "#", "12.11.2016 в 22:44", "16 дней назад", "вакансия"));
-        jobForFrilancerClasses.add(new JobForFrilancerClass("#", "Статьи про самостоятельное оформление тур. и миграционных документов", "", "18 заявок",
-                "На сайт для самостоятельных путешественников и мигрантов нужны статьи про: визы, загранпаспорта, миграционные карты, ВНЖ, гражданство и так далее. Всего около 500 статей. Особое внимание уделяется дос...",
-                "Копирайтинг", "#", "12.11.2016 в 22:44", "16 дней назад", ""));
+        CustomInfoDAO customInfoDAO = new CustomInfoDAO();
+        ArrayList<CustomInfo> customInfos = customInfoDAO.getAllCustoms();
 
-        request.setAttribute("jobsForFrilancer", jobForFrilancerClasses);
+        request.setAttribute("jobsForFrilancer", customInfos);
     }
 
     private void createForumThemesPanel(HttpServletRequest request){
-        ArrayList<ForumThemeClass> forumThemeClasses = new ArrayList<ForumThemeClass>();
-        forumThemeClasses.add(new ForumThemeClass("#", "Сколько будет стоить CMS?)", "1 час назад",
-                "9 сообщений", "/img/forum/themes/java_vs_sharp.jpg"));
-        forumThemeClasses.add(new ForumThemeClass("#", "Раскрутка сайта за 300 гривен - это как?", "4 час назад",
-                "12 сообщений", "/img/forum/themes/fun_time.jpg"));
+        ForumThemeDAO forumThemeDAO = new ForumThemeDAO();
+        ArrayList<entity.jsp.forum.theme.ForumThemeClass> forumThemeClasses = forumThemeDAO.getAllThemes();
 
         request.setAttribute("forumThemes", forumThemeClasses);
     }
 
     private void createFrilancerAdvertising(HttpServletRequest request){
-        AdvertisingFrilancerClass advertisingFrilancerClass = new AdvertisingFrilancerClass("/img/avatars/my_own.jpg",
-                "#", "Frilancer_Name Surname(prof)", "Современный дизайн достигающий цели! От идеи до результата!");
+        UserInfoDAO userInfoDAO = new UserInfoDAO();
+        UserInfo userInfo = userInfoDAO.getAllUsers().get(0);
+        AdvertisingFrilancerClass advertisingFrilancerClass = new AdvertisingFrilancerClass(userInfo.getImgLink(),
+                "#", userInfo.getLogin(), userInfo.getDescription());
 
         request.setAttribute("advertising", advertisingFrilancerClass);
     }
 
     private void createFrilancerTop(HttpServletRequest request){
+        UserInfoDAO userInfoDAO = new UserInfoDAO();
+        ArrayList<UserInfo> userInfos = userInfoDAO.getAllUsers();
         ArrayList<FrilancerTopClass> frilancerTopClasses = new ArrayList<FrilancerTopClass>();
 
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "12"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "Second frilancer", "11"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "10"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "10"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
+        for (UserInfo userinfo : userInfos) {
+            frilancerTopClasses.add(new FrilancerTopClass("#", userinfo.getLogin(), userinfo.getPoints()));
+        }
 
         request.setAttribute("frilancerList", frilancerTopClasses);
     }

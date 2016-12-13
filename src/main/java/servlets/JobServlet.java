@@ -1,8 +1,9 @@
 package servlets;
 
+import DAO.project.custom.CustomInfoDAO;
 import entity.jsp.job.ServiceProjectClass;
-import entity.jsp.main.job.JobForFrilancerClass;
 import entity.jsp.user.category.CategoryClass;
+import entity.project.custom.CustomInfo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -33,23 +34,18 @@ public class JobServlet extends HttpServlet {
     }
 
     private void createJobPanel(HttpServletRequest request){
-        ArrayList<JobForFrilancerClass> jobForFrilancerClasses = new ArrayList<JobForFrilancerClass>();
-        jobForFrilancerClasses.add(new JobForFrilancerClass("#", "Программист в Игровой проект на постоянную удаленную работу", "$1500", "5 заявок",
-                "В команду из 6 программистов нужен сотрудник на постоянную основу для разработки и улучшения имеющихся игровых проектов связанных со Steam, WoT и E-commerce. 2+ млн посещаемости ежемесячно насчитывает...",
-                "Веб-программирование", "#", "12.11.2016 в 22:44", "16 дней назад", "вакансия"));
-        jobForFrilancerClasses.add(new JobForFrilancerClass("#", "Статьи про самостоятельное оформление тур. и миграционных документов", "", "18 заявок",
-                "На сайт для самостоятельных путешественников и мигрантов нужны статьи про: визы, загранпаспорта, миграционные карты, ВНЖ, гражданство и так далее. Всего около 500 статей. Особое внимание уделяется дос...",
-                "Копирайтинг", "#", "12.11.2016 в 22:44", "16 дней назад", ""));
+        CustomInfoDAO customInfoDAO = new CustomInfoDAO();
+        ArrayList<CustomInfo> customInfos = customInfoDAO.getAllCustoms();
 
-        request.setAttribute("jobsForFrilancer", jobForFrilancerClasses);
+        request.setAttribute("jobsForFrilancer", customInfos);
     }
 
     private void createCategoryList(HttpServletRequest request){
         ArrayList<CategoryClass> categoryClasses = new ArrayList<CategoryClass>();
 
-        categoryClasses.add(new CategoryClass("#", "200", "Администрирование сайтов"));
-        categoryClasses.add(new CategoryClass("#", "200", "Аудио, Видео и Мультимедиа"));
-        categoryClasses.add(new CategoryClass("#", "200", "Графика и Фотография"));
+        categoryClasses.add(new CategoryClass("#", "2", "Администрирование сайтов"));
+        categoryClasses.add(new CategoryClass("#", "3", "Аудио, Видео и Мультимедиа"));
+        categoryClasses.add(new CategoryClass("#", "1", "Графика и Фотография"));
 
         request.setAttribute("categories", categoryClasses);
     }

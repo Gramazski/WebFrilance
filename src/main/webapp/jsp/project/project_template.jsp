@@ -47,7 +47,7 @@
         <div class="col-sm-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">${project.name}</b>
+                    <b class="h3">${project.title}</b>
                 </div>
                 <div class="panel-body">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -154,47 +154,6 @@
             </div>
         </div>
     </div>
-
-    <footer class="page_footer" style="margin-bottom: 3%">
-        <div class="container">
-            <hr style="margin-top: 2%; margin-bottom: 2%">
-            <div class="row">
-                <div class="col-xs-6 col-sm-4">
-                    <div class="spacer-20">
-                    <span class="hidden-xs hidden-sm hidden-md">
-                        <a href="/untitled/" rel="nofollow">Главная страница</a>
-                        <span class="divider text-muted">•</span>
-                    </span>
-                        <a href="/terms/">Правила сервиса</a>
-                        <span class="hidden-xs">
-                        <span class="divider text-muted">•</span>
-                        <a href="/tariffs/">Тарифы</a>
-                    </span>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center social_links hidden-xs">
-                    <div class="text-muted spacer-10 hidden-xs hidden-sm">Присоединяйтесь к нам!</div>
-                </div>
-                <div class="col-xs-6 col-sm-4 text-right">
-                    <div>
-                        <a href="/support/">Служба поддержки</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 1%">
-                <div class="col-xs-6 col-sm-4">
-                    © 2016, ООО «Frilancer»
-                </div>
-                <div class="col-sm-4 text-center social_links hidden-xs">
-                    <a href="/untitled/img/social/facebook.png" target="_blank" rel="nofollow"><img src="/untitled/img/social/facebook.png" width="30" height="30" alt="in Facebook"></a>
-                    <a href="#" target="_blank" rel="nofollow"><img src="/untitled/img/social/vkontakte.png" width="30" height="30" alt="in ВКонтакте"></a>
-                    <a href="#" target="_blank" rel="nofollow"><img src="/untitled/img/social/twitter.jpg" width="30" height="30" alt="in Twitter"></a>
-                    <a href="#" target="_blank" rel="nofollow"><img src="/untitled/img/social/google_plus.png" width="30" height="30" alt="in Google+"></a>
-                    <a href="#" target="_blank" rel="nofollow"><img src="/untitled/img/social/youtube.png" width="30" height="30" alt="in Youtube"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 <c:import url="../static/footer.jsp" />
 </body>

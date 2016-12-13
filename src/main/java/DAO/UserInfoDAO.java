@@ -1,10 +1,9 @@
 package DAO;
 
+import DAO.mind.CustomMindDAO;
+import DAO.project.info.ProjectInfoDAO;
 import entity.Mind.CustomerMind;
-import entity.jsp.project.info.user.SimpleUserClass;
-import entity.project.custom.CustomInfo;
 import entity.project.info.ProjectInfo;
-import entity.project.order.OrderInfo;
 import entity.user.info.UserInfo;
 
 import java.sql.*;
@@ -47,25 +46,13 @@ public class UserInfoDAO {
 
     }
 
-    public UserInfo getUserInfoById(String id){
-        UserInfo userInfo = new UserInfo();
-        PreparedStatement preparedStatement = null;
+    public UserInfo getUserInfoById(String login){
+        ArrayList<UserInfo> userInfos = getAllUsers();
 
-        try{
-            preparedStatement = connection.prepareStatement(SQL_GET);
-            preparedStatement.setString(1, id);
-            ResultSet rs = preparedStatement.executeQuery();
-            //STEP 5: Extract data from result set
-            while(rs.next()){
-                //Retrieve by column name
-                String  name  = rs.getString("name");
+        for (UserInfo userInfo : userInfos){
+            if (userInfo.getLogin().equals(login)){
+                return userInfo;
             }
-            rs.close();
-            preparedStatement.close();
-            connection.close();
-        }
-        catch (SQLException ex){
-
         }
 
         return new UserInfo();
@@ -86,12 +73,16 @@ public class UserInfoDAO {
             preparedStatement.setString(8, userInfo.getDescription());
             String result = "";
             for(CustomerMind mind : userInfo.getMinds()){
-                result.endsWith("!" + mind.getTitle());
+                if (mind != null){
+                    result += "!" + mind.getTitle();
+                }
             }
             preparedStatement.setString(9, result);
             result = "";
             for(ProjectInfo projectInfo : userInfo.getProjectInfos()){
-                result.endsWith("!" + projectInfo.getTitle());
+                if (projectInfo != null){
+                    result += "!" + projectInfo.getTitle();
+                }
             }
             preparedStatement.setString(10, result);
             preparedStatement.setString(11, userInfo.getSurname());
@@ -105,17 +96,17 @@ public class UserInfoDAO {
             preparedStatement.setString(19, userInfo.getPoints());
             result = "";
             for(String orderInfo : userInfo.getOrders()){
-                result.endsWith("!" + orderInfo);
+                result +="!" + orderInfo;
             }
             preparedStatement.setString(20, result);
             result = "";
             for(String orderInfo : userInfo.getMessages()){
-                result.endsWith("!" + orderInfo);
+                result += "!" + orderInfo;
             }
             preparedStatement.setString(21, result);
             int i = preparedStatement.executeUpdate();
             preparedStatement.close();
-            connection.close();
+            //connection.close();
         }
         catch (SQLException ex){
 
@@ -137,12 +128,16 @@ public class UserInfoDAO {
             preparedStatement.setString(8, userInfo.getDescription());
             String result = "";
             for(CustomerMind mind : userInfo.getMinds()){
-                result.endsWith("!" + mind.getTitle());
+                if (mind != null){
+                    result += "!" + mind.getTitle();
+                }
             }
             preparedStatement.setString(9, result);
             result = "";
             for(ProjectInfo projectInfo : userInfo.getProjectInfos()){
-                result.endsWith("!" + projectInfo.getTitle());
+                if (projectInfo != null){
+                    result += "!" + projectInfo.getTitle();
+                }
             }
             preparedStatement.setString(10, result);
             preparedStatement.setString(11, userInfo.getSurname());
@@ -156,12 +151,12 @@ public class UserInfoDAO {
             preparedStatement.setString(18, userInfo.getPoints());
             result = "";
             for(String orderInfo : userInfo.getOrders()){
-                result.endsWith("!" + orderInfo);
+                result +="!" + orderInfo;
             }
             preparedStatement.setString(19, result);
             result = "";
             for(String orderInfo : userInfo.getMessages()){
-                result.endsWith("!" + orderInfo);
+                result += "!" + orderInfo;
             }
             preparedStatement.setString(20, result);
             int i = preparedStatement.executeUpdate();
@@ -175,7 +170,6 @@ public class UserInfoDAO {
 
     public ArrayList<UserInfo> getAllUsers(){
         ArrayList<UserInfo> userInfos = new ArrayList<UserInfo>();
-        UserInfo userInfo = new UserInfo();
 
         PreparedStatement preparedStatement = null;
         Statement statement = null;
@@ -185,6 +179,7 @@ public class UserInfoDAO {
             statement = connection.createStatement();
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
+                UserInfo userInfo = new UserInfo();
                 userInfo.setDateCreation(rs.getString("timeCreation"));
                 userInfo.setSurname(rs.getString("surname"));
                 userInfo.setPassword(rs.getString("password"));
@@ -202,28 +197,40 @@ public class UserInfoDAO {
                 userInfo.setSex(rs.getString("sex"));
                 userInfo.setYears(rs.getString("years"));
                 ArrayList<CustomerMind> customerMinds = new ArrayList<CustomerMind>();
+                CustomMindDAO customMindDAO = new CustomMindDAO();
                 String[] stringArray = rs.getString("minds").split("!");
                 for (String someString : stringArray){
-                    customerMinds.add(new CustomerMind(new UserInfo(), new UserInfo(), "", "", "", someString));
+                    if (!someString.equals("")){
+                        customerMinds.add(customMindDAO.getMindByName(someString));
+                    }
                 }
                 userInfo.setMinds(customerMinds);
                 ArrayList<ProjectInfo> projectInfos = new ArrayList<ProjectInfo>();
+                ProjectInfoDAO projectInfoDAO = new ProjectInfoDAO();
                 stringArray = rs.getString("works").split("!");
                 for (String someString : stringArray){
-                    projectInfos.add(new ProjectInfo(new UserInfo(), new CustomInfo("", "", "",
-                            new SimpleUserClass("", ""), new ArrayList<OrderInfo>()), "", ""));
+                    if (!someString.equals("")){
+                        projectInfos.add(projectInfoDAO.getUserInfoByTitle(someString));
+                    }
+
                 }
                 userInfo.setProjectInfos(projectInfos);
                 ArrayList<String> orders = new ArrayList<String>();
-                stringArray = rs.getString("works").split("!");
+                stringArray = rs.getString("orders").split("!");
                 for (String someString : stringArray){
-                    orders.add(someString);
+                    if (!someString.equals("")){
+                        orders.add(someString);
+                    }
+
                 }
                 userInfo.setOrders(orders);
                 ArrayList<String> messages = new ArrayList<String>();
-                stringArray = rs.getString("works").split("!");
+                stringArray = rs.getString("messages").split("!");
                 for (String someString : stringArray){
-                    messages.add(someString);
+                    if (!someString.equals("")){
+                        messages.add(someString);
+                    }
+
                 }
                 userInfo.setMessages(messages);
                 userInfo.setBirthday(rs.getString("birthday"));
@@ -233,7 +240,7 @@ public class UserInfoDAO {
             rs.close();
 
             preparedStatement.close();
-            connection.close();
+            //connection.close();
         }
         catch (SQLException ex){
 

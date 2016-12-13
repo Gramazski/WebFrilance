@@ -44,6 +44,11 @@
         <servlet-class>servlets.PersonalUserServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>CustomServlett</servlet-name>
+        <servlet-class>servlets.CustomServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
         <url-pattern>/controller</url-pattern>
@@ -82,6 +87,11 @@
     <servlet-mapping>
         <servlet-name>PersonalUserServlet</servlet-name>
         <url-pattern>/personaluser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CustomServlett</servlet-name>
+        <url-pattern>/custom</url-pattern>
     </servlet-mapping>
 
 </web-app>

@@ -14,135 +14,297 @@
     <table id="9" parent="1" name="reguser"/>
     <table id="10" parent="1" name="authuser"/>
     <table id="11" parent="1" name="idtable"/>
-    <column id="12" parent="8" name="id">
+    <table id="12" parent="1" name="projectinfo"/>
+    <table id="13" parent="1" name="custominfo"/>
+    <table id="14" parent="1" name="customminds"/>
+    <table id="15" parent="1" name="forumtheme"/>
+    <table id="16" parent="1" name="orderinfo"/>
+    <table id="17" parent="1" name="forummessage"/>
+    <column id="18" parent="8" name="id">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="13" parent="8" name="name">
+    <column id="19" parent="8" name="name">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="14" parent="8" name="imgLink">
+    <column id="20" parent="8" name="imgLink">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="15" parent="8" name="years">
+    <column id="21" parent="8" name="years">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="16" parent="8" name="timeCreation">
+    <column id="22" parent="8" name="timeCreation">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="17" parent="8" name="cost">
+    <column id="23" parent="8" name="cost">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="18" parent="8" name="costFrom">
+    <column id="24" parent="8" name="costFrom">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="19" parent="8" name="description">
+    <column id="25" parent="8" name="description">
       <mandatory>1</mandatory>
       <data-type>varchar(500)|0</data-type>
     </column>
-    <column id="20" parent="8" name="minds">
+    <column id="26" parent="8" name="minds">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="21" parent="8" name="works">
+    <column id="27" parent="8" name="works">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="22" parent="8" name="surname">
+    <column id="28" parent="8" name="surname">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="23" parent="8" name="birthday">
+    <column id="29" parent="8" name="birthday">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="24" parent="8" name="sex">
+    <column id="30" parent="8" name="sex">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="25" parent="8" name="role">
+    <column id="31" parent="8" name="role">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="26" parent="8" name="login">
+    <column id="32" parent="8" name="login">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="27" parent="8" name="email">
+    <column id="33" parent="8" name="email">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="28" parent="8" name="password">
+    <column id="34" parent="8" name="password">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="29" parent="8" name="country">
+    <column id="35" parent="8" name="country">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="30" parent="8" name="points">
+    <column id="36" parent="8" name="points">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="31" parent="8" name="orders">
+    <column id="37" parent="8" name="orders">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="32" parent="8" name="messages">
+    <column id="38" parent="8" name="messages">
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="33" parent="9" name="id">
+    <column id="39" parent="9" name="id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="34" parent="9" name="name">
+    <column id="40" parent="9" name="name">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="35" parent="9" name="birthday">
+    <column id="41" parent="9" name="birthday">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="36" parent="9" name="sex">
+    <column id="42" parent="9" name="sex">
       <data-type>varchar(10)|0</data-type>
     </column>
-    <column id="37" parent="9" name="role">
+    <column id="43" parent="9" name="role">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="38" parent="9" name="email">
+    <column id="44" parent="9" name="email">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="39" parent="9" name="login">
+    <column id="45" parent="9" name="login">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="40" parent="9" name="password">
+    <column id="46" parent="9" name="password">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="41" parent="9" name="surname">
+    <column id="47" parent="9" name="surname">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="42" parent="10" name="id">
+    <column id="48" parent="10" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="43" parent="10" name="login">
+    <column id="49" parent="10" name="login">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="44" parent="10" name="email">
+    <column id="50" parent="10" name="email">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="45" parent="10" name="password">
+    <column id="51" parent="10" name="password">
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="46" parent="11" name="id">
+    <column id="52" parent="11" name="id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="47" parent="11" name="count">
+    <column id="53" parent="11" name="count">
       <data-type>int(11)|0</data-type>
+    </column>
+    <column id="54" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="55" parent="12" name="frilancer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="56" parent="12" name="minds">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="57" parent="12" name="custominfo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="58" parent="12" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="59" parent="12" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="60" parent="12" name="imgLink">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="61" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="62" parent="13" name="timeCreation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="63" parent="13" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="64" parent="13" name="body">
+      <mandatory>1</mandatory>
+      <data-type>varchar(2000)|0</data-type>
+    </column>
+    <column id="65" parent="13" name="price">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="66" parent="13" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="67" parent="13" name="customCondition">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="68" parent="13" name="author">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="69" parent="13" name="orders">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="70" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="71" parent="14" name="author">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="72" parent="14" name="frilancer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="73" parent="14" name="body">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="74" parent="14" name="mark">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="75" parent="14" name="time">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="76" parent="14" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="77" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="78" parent="15" name="timeCreation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="79" parent="15" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="80" parent="15" name="imgLink">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="81" parent="15" name="messages">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="82" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="83" parent="16" name="time">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="84" parent="16" name="customes">
+      <mandatory>1</mandatory>
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="85" parent="16" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="86" parent="16" name="customer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="87" parent="16" name="frilancer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="88" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="89" parent="17" name="timeCreation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="90" parent="17" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="91" parent="17" name="imgLink">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="92" parent="17" name="author">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
     </column>
   </database-model>
 </dataSource>

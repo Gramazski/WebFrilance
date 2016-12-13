@@ -26,11 +26,11 @@
                     <b class="h3">Creation</b>
                 </div>
                 <div class="panel-body">
-                    <form>
+                    <form action="/controller?command=CREATE_CUSTOM" method="post">
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="name">Title:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter title">
+                                <input type="text" class="form-control" id="name" name="title" placeholder="Enter title">
                                 <span id="error_first_name" class="help-block"></span>
                                 <!--<label class="control-label">Incorrect email</label>-->
                             </div>
@@ -39,14 +39,14 @@
                             <div class="col-sm-6">
                                 <label for="name">Price:</label>
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span><input class="form-control" id="appendedPrependedInput" size="16" type="number">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span><input class="form-control" id="appendedPrependedInput" name="price" size="16" type="number">
                                 </div>
                                 <span id="error_price" class="help-block"></span>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="sel1">Type:</label>
-                                    <select class="form-control" id="sel1">
+                                    <select class="form-control" name="type" id="sel1">
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -60,7 +60,7 @@
                             <div class="col-sm-10">
                                 <div class="form-group">
                                     <label for="comment">Description:</label>
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    <textarea class="form-control" rows="5" id="comment" name="description"></textarea>
                                 </div>
                             </div>
                         </div>

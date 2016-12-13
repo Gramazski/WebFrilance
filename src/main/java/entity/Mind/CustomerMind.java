@@ -6,17 +6,16 @@ import entity.user.info.UserInfo;
  * Created by gs on 11.12.2016.
  */
 public class CustomerMind {
-    private UserInfo author;
+    private String author;
     private UserInfo frilancer;
     private String body;
     private String mark;
     private String time;
     private String title;
 
-    public CustomerMind(UserInfo author, UserInfo frilancer, String body, String mark, String time, String title){
+    public CustomerMind(String author, String body, String mark, String time, String title){
         this.author = author;
         this.body = body;
-        this.frilancer = frilancer;
         this.mark = mark;
         this.time = time;
         this.title = title;
@@ -30,7 +29,7 @@ public class CustomerMind {
         this.title = title;
     }
 
-    public UserInfo getAuthor() {
+    public String getAuthor() {
         return author;
     }
 

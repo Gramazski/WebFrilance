@@ -1,5 +1,9 @@
 package entity.jsp.forum.theme;
 
+import entity.jsp.forum.message.ForumMessage;
+
+import java.util.ArrayList;
+
 /**
  * Created by gs on 11.12.2016.
  */
@@ -9,13 +13,13 @@ public class ForumThemeClass {
     private String imgLink;
     private String link;
     private String messageCount;
-    //private ArrayList<ForumMessage> messages;
+    private ArrayList<ForumMessage> messages;
 
-    public ForumThemeClass(String timeAgo, String title, String imgLink, String link){
+    public ForumThemeClass(String timeAgo, String title, String imgLink, String link, ArrayList<ForumMessage> messages){
         this.timeAgo = timeAgo;
         this.imgLink = imgLink;
         this.link = link;
-        //this.messages = messages;
+        this.messages = messages;
         this.title = title;
     }
 
@@ -37,5 +41,9 @@ public class ForumThemeClass {
 
     public String getMessageCount() {
         return "4";
+    }
+
+    public ArrayList<ForumMessage> getMessages() {
+        return messages;
     }
 }

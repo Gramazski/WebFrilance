@@ -18,6 +18,14 @@ public class OrderInfo {
         this.timeAgo = timeAgo;
     }
 
+    public void setCustomer(UserInfo customer) {
+        this.customer = customer;
+    }
+
+    public void setCustomName(String customName) {
+        this.customName = customName;
+    }
+
     public String getCustomes() {
         return customes;
     }
@@ -28,5 +36,13 @@ public class OrderInfo {
 
     public UserInfo getFrilancer() {
         return frilancer;
+    }
+
+    public String getCustomName() {
+        return customName;
+    }
+
+    public UserInfo getCustomer() {
+        return customer;
     }
 }

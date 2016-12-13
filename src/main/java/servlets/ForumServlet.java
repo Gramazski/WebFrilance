@@ -1,5 +1,6 @@
 package servlets;
 
+import DAO.forum.ForumThemeDAO;
 import entity.jsp.forum.theme.ForumThemeClass;
 import entity.jsp.forum.theme.SimpleForumThemeClass;
 import entity.jsp.job.ServiceProjectClass;
@@ -31,11 +32,8 @@ public class ForumServlet extends HttpServlet {
     }
 
     private void createForumThemePanel(HttpServletRequest request){
-        ArrayList<ForumThemeClass> forumThemeClasses = new ArrayList<ForumThemeClass>();
-        forumThemeClasses.add(new ForumThemeClass("3 days ago", "Good theme", "/img/avatars/my_own.jpg", "#"));
-        forumThemeClasses.add(new ForumThemeClass("3 days ago", "Good theme", "/img/avatars/my_own.jpg", "#"));
-        forumThemeClasses.add(new ForumThemeClass("3 days ago", "Good theme", "/img/avatars/my_own.jpg", "#"));
-        forumThemeClasses.add(new ForumThemeClass("3 days ago", "Good theme", "/img/avatars/my_own.jpg", "#"));
+        ForumThemeDAO forumThemeDAO = new ForumThemeDAO();
+        ArrayList<ForumThemeClass> forumThemeClasses = forumThemeDAO.getAllThemes();
 
         request.setAttribute("themes", forumThemeClasses);
     }

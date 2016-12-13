@@ -1,12 +1,12 @@
 package servlets;
 
+import DAO.UserInfoDAO;
+import DAO.project.info.ProjectInfoDAO;
 import entity.jsp.main.advertising.AdvertisingFrilancerClass;
 import entity.jsp.main.frilancer.FrilancerTopClass;
-import entity.jsp.main.work.FrilancerWorkClass;
-import entity.jsp.project.info.ProjectInfoClass;
-import entity.jsp.project.info.user.SimpleUserClass;
 import entity.jsp.project.stats.ProjectStatsClass;
-import entity.project.order.OrderInfo;
+import entity.project.info.ProjectInfo;
+import entity.user.info.UserInfo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -37,45 +37,30 @@ public class ProjectServlet extends HttpServlet {
     }
 
     private void createProjectDescription(HttpServletRequest request){
-        ArrayList<OrderInfo> orderInfos = new ArrayList<OrderInfo>();
-        ArrayList<FrilancerWorkClass> frilancerWorkClasses = new ArrayList<FrilancerWorkClass>();
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/music_site.jpg", "Pulpit Rock", "Good site on Node.js about music!"));
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/java_site.jpg", "Pulpit Rock", "Lorem ipsum donec id elit non."));
-        frilancerWorkClasses.add(new FrilancerWorkClass("#", "/img/works/js_scripts.jpg", "Pulpit Rock", "Good site on Node.js about music!"));
-        /*orderInfos.add(new OrderInfo("3 days ago", "5", new UserInfo("#", "/img/avatars/my_own.jpg", "#", "Frilancer_Name Surname(prof)", "Frilancers years",
-                "Years in service", "#", "10", "30$/hour", "from 100$", "Frilancer long description", frilancerWorkClasses)));
-        orderInfos.add(new OrderInfo("3 days ago", "10", new UserClass("#", "/img/avatars/my_own.jpg", "#", "Frilancer_Name Surname(prof)", "Frilancers years",
-                "Years in service", "#", "10", "30$/hour", "from 100$", "Frilancer long description", frilancerWorkClasses)));*/
-        ProjectInfoClass projectInfoClass = new ProjectInfoClass("3 days ago", "Нужен парсер БК онлайн матчей в\n" +
-                "                    реальном времени. Переменные (значения) для Парсинга выдам (около 5).\n" +
-                "                    Адрес для Парсинга\n" +
-                "                    <a href=\"http://sports.williamhill.com/betting/en-gb/football/in-play\">http://sports.williamhill.com/betting/en-gb/football/in-playhttp://sports.williamhill.com/betting/en-gb/football/in-play</a> здесь матчи, именно уже внутри каждого мачта и нужно Парсить заданные переменные, например такие как: время матча, коэффициенты и т.д. Выполнить нужно до пятницы (48часов), не позже. Требование: опыт обязателен, часто быть на рабочем месте - нужна будет поддержка. Оплата своевременная и адекватная.",
-                "Парсер БК", new SimpleUserClass("Roman", "5 month in service"), orderInfos);
+        ProjectInfoDAO projectInfoDAO = new ProjectInfoDAO();
+        String projectTitle = (String) request.getAttribute("title");
+        ProjectInfo projectInfo = projectInfoDAO.getUserInfoByTitle(projectTitle);
 
-
-        request.setAttribute("projectInfo", projectInfoClass);
+        request.setAttribute("projectInfo", projectInfo);
     }
 
     private void createFrilancerAdvertising(HttpServletRequest request){
-        AdvertisingFrilancerClass advertisingFrilancerClass = new AdvertisingFrilancerClass("/img/avatars/my_own.jpg",
-                "#", "Frilancer_Name Surname(prof)", "Современный дизайн достигающий цели! От идеи до результата!");
+        UserInfoDAO userInfoDAO = new UserInfoDAO();
+        UserInfo userInfo = userInfoDAO.getAllUsers().get(0);
+        AdvertisingFrilancerClass advertisingFrilancerClass = new AdvertisingFrilancerClass(userInfo.getImgLink(),
+                "#", userInfo.getLogin(), userInfo.getDescription());
 
         request.setAttribute("advertising", advertisingFrilancerClass);
     }
 
     private void createFrilancerTop(HttpServletRequest request){
+        UserInfoDAO userInfoDAO = new UserInfoDAO();
+        ArrayList<UserInfo> userInfos = userInfoDAO.getAllUsers();
         ArrayList<FrilancerTopClass> frilancerTopClasses = new ArrayList<FrilancerTopClass>();
 
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "12"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "Second frilancer", "11"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "10"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "10"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
-        frilancerTopClasses.add(new FrilancerTopClass("#", "First frilancer", "2"));
+        for (UserInfo userinfo : userInfos) {
+            frilancerTopClasses.add(new FrilancerTopClass("#", userinfo.getLogin(), userinfo.getPoints()));
+        }
 
         request.setAttribute("frilancerList", frilancerTopClasses);
     }

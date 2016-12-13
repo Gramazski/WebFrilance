@@ -76,10 +76,10 @@
                         <c:forEach var="frilancerWork" items="${frilancerWorks}" >
                             <div class="col-md-4">
                                 <div class="thumbnail">
-                                    <a href="${frilancerWork.link}" target="_blank">
-                                        <img src="${frilancerWork.imgLink}" alt="${frilancerWork.altImgName}" style="width:100%; height: 150px">
+                                    <a href="/projectcontrol?title=${frilancerWork.title}" target="_blank">
+                                        <img src="${frilancerWork.imgLink}" alt="1" style="width:100%; height: 150px">
                                         <div class="caption">
-                                            <p>${frilancerWork.description}</p>
+                                            <p>${frilancerWork.title}</p>
                                         </div>
                                     </a>
                                 </div>
@@ -100,26 +100,26 @@
                         <div class="row">
                             <div class="col-sm-7" style="margin-top: -10px; padding-bottom: 20px">
                                 <h4>
-                                    <a href="${jobForFrilancer.link}">${jobForFrilancer.title}</a>
+                                    <a href="/custom?projectInfo=${jobForFrilancer.name}">${jobForFrilancer.name}</a>
                                 </h4>
                             </div>
-                            <div class="col-sm-2">
-                                ${jobForFrilancer.cost}
+                            <div class="col-sm-2" style="color: red">
+                                    ${jobForFrilancer.price}$
                             </div>
                             <div class="col-sm-3 text-right text-nowrap hidden-xs">
-                                ${jobForFrilancer.orderCount}
+                                0 заявок
                             </div>
                             <div class="col-xs-12" style="margin-top: -10px; margin-bottom: -10px">
-                                ${jobForFrilancer.description}
+                                ${jobForFrilancer.body}
                             </div>
                             <div class="col-xs-12 text-muted" style="margin-top: 2%">
-                                <a class="text-muted" href="${jobForFrilancer.jobTagLink}">${jobForFrilancer.jobTag}</a>
+                                <a class="text-muted" href="#">${jobForFrilancer.type}</a>
                                 <span class="divider">•</span>
                                 <span>
-                                <span data-toggle="tooltip" title="" data-timestamp="1478983442" class="time_ago" data-original-title="${jobForFrilancer.totalTime}">${jobForFrilancer.timeAgo}</span>
+                                <span data-toggle="tooltip" title="" data-timestamp="1478983442" class="time_ago" data-original-title="">${jobForFrilancer.timeAgo}</span>
                             </span>
                                 <span class="divider">•</span>
-                                ${jobForFrilancer.jobType}
+                                ${jobForFrilancer.type}
                             </div>
                         </div>
                         <hr style="margin-top: 2%; margin-bottom: 2%">
@@ -143,7 +143,7 @@
                                 <img src="${forumTheme.imgLink}" class="media-object" style="width:40px">
                             </div>
                             <div class="media-body">
-                                <a href="${forumTheme.link}"><h4 class="media-heading">${forumTheme.title}</h4></a>
+                                <a href="/jsp/forum/theme/theme_template.jsp?theme=${forumTheme}"><h4 class="media-heading">${forumTheme.title}</h4></a>
                                 <p class="text-muted">${forumTheme.messageCount}</p>
                             </div>
                         </div>
