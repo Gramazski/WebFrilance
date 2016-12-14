@@ -56,7 +56,7 @@
                                     ${jobForFrilancer.price}$
                             </div>
                             <div class="col-sm-3 text-right text-nowrap hidden-xs">
-                                    0 заявок
+                                    ${jobForFrilancer.frilancersOrders.size()} заявок
                             </div>
                             <div class="col-xs-12" style="margin-top: -10px; margin-bottom: -10px">
                                     ${jobForFrilancer.body}

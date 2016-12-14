@@ -67,7 +67,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="pull-right hidden-xs">
-                        <a href="#">All frilancers works</a>
+                        <a href="/projects">All frilancers works</a>
                     </div>
                     <b class="h3">Новые работы фрилансеров</b>
                 </div>
@@ -143,7 +143,7 @@
                                 <img src="${forumTheme.imgLink}" class="media-object" style="width:40px">
                             </div>
                             <div class="media-body">
-                                <a href="/jsp/forum/theme/theme_template.jsp?theme=${forumTheme}"><h4 class="media-heading">${forumTheme.title}</h4></a>
+                                <a href="/theme?theme=${forumTheme.title}"><h4 class="media-heading">${forumTheme.title}</h4></a>
                                 <p class="text-muted">${forumTheme.messageCount}</p>
                             </div>
                         </div>

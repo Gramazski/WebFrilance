@@ -23,6 +23,7 @@ public class CustomInfoDAO {
     private final static String SQL_UPDATE =
             "UPDATE custominfo SET `id` = ?, `timeCreation` = ?, `body` = ?," +
                     " `price` = ?, `type` = ?, `customCondition` = ?, `author` = ?, `orders` = ? WHERE name = ?";
+    private final static String SQL_DELETE = "DELETE FROM custominfo WHERE name = ?";
 
     public CustomInfoDAO(){
         try{
@@ -47,6 +48,22 @@ public class CustomInfoDAO {
         }
 
         return null;
+    }
+
+    public void deleteCustom(String customName){
+        PreparedStatement preparedStatement = null;
+
+        try{
+            preparedStatement = connection.prepareStatement(SQL_DELETE);
+            preparedStatement.setString(1, customName);
+
+            int i = preparedStatement.executeUpdate();
+            preparedStatement.close();
+            connection.close();
+        }
+        catch (SQLException ex){
+
+        }
     }
 
     public void addCustomInfo(CustomInfo customInfo){

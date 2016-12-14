@@ -81,7 +81,7 @@ public class ForumThemeDAO {
             preparedStatement.setString(3, forumTheme.getImgLink());
             String result = "";
             for(ForumMessage forumMessage : forumTheme.getMessages()){
-                result.endsWith("!" + forumMessage.getTitle());
+                result += "!" + forumMessage.getTitle();
             }
             preparedStatement.setString(4, result);
             preparedStatement.setString(5, forumTheme.getTitle());

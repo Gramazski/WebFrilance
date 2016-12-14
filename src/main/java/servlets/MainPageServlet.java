@@ -102,7 +102,7 @@ public class MainPageServlet extends HttpServlet {
         UserInfoDAO userInfoDAO = new UserInfoDAO();
         UserInfo userInfo = userInfoDAO.getAllUsers().get(0);
         AdvertisingFrilancerClass advertisingFrilancerClass = new AdvertisingFrilancerClass(userInfo.getImgLink(),
-                "#", userInfo.getLogin(), userInfo.getDescription());
+                "/personaluser?login=" + userInfo.getLogin(), userInfo.getLogin(), userInfo.getDescription());
 
         request.setAttribute("advertising", advertisingFrilancerClass);
     }
@@ -113,7 +113,7 @@ public class MainPageServlet extends HttpServlet {
         ArrayList<FrilancerTopClass> frilancerTopClasses = new ArrayList<FrilancerTopClass>();
 
         for (UserInfo userinfo : userInfos) {
-            frilancerTopClasses.add(new FrilancerTopClass("#", userinfo.getLogin(), userinfo.getPoints()));
+            frilancerTopClasses.add(new FrilancerTopClass("/personaluser?login=" + userinfo.getLogin(), userinfo.getLogin(), userinfo.getPoints()));
         }
 
         request.setAttribute("frilancerList", frilancerTopClasses);

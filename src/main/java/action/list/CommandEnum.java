@@ -32,11 +32,26 @@ public enum CommandEnum {
             this.command = new AddMindCommand();
         }
     },
-    /*LOGOUT {
+    UPDATE_CUSTOM{
+        {
+            this.command = new UpdateCustomCommand();
+        }
+    },
+    DELETE_CUSTOM{
+        {
+            this.command = new DeleteCustomCommand();
+        }
+    },
+    UPDATE_FRILANCER{
+        {
+            this.command = new UpdateCustomFrilancer();
+        }
+    },
+    LOGOUT {
         {
             this.command = new LogoutCommand();
         }
-    },*/
+    },
     REGISTR{
         {
             this.command = new RegisterCommand();

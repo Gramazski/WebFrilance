@@ -38,8 +38,11 @@ public class ProjectServlet extends HttpServlet {
 
     private void createProjectDescription(HttpServletRequest request){
         ProjectInfoDAO projectInfoDAO = new ProjectInfoDAO();
-        String projectTitle = (String) request.getAttribute("title");
+        String projectTitle = request.getParameter("title");
         ProjectInfo projectInfo = projectInfoDAO.getUserInfoByTitle(projectTitle);
+        UserInfoDAO userInfoDAO = new UserInfoDAO();
+        UserInfo userInfo = userInfoDAO.getUserInfoById(projectInfo.getFrilancer().getLogin());
+        projectInfo.setFrilancer(userInfo);
 
         request.setAttribute("projectInfo", projectInfo);
     }

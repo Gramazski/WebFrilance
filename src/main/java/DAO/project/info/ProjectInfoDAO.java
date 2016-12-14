@@ -4,8 +4,10 @@ import DAO.UserInfoDAO;
 import DAO.mind.CustomMindDAO;
 import DAO.project.custom.CustomInfoDAO;
 import entity.Mind.CustomerMind;
+import entity.jsp.project.info.user.SimpleUserClass;
 import entity.project.custom.CustomInfo;
 import entity.project.info.ProjectInfo;
+import entity.project.order.OrderInfo;
 import entity.user.info.UserInfo;
 
 import java.sql.*;
@@ -21,7 +23,7 @@ public class ProjectInfoDAO {
                     " `title`, imgLink) VALUES(?,?,?,?,?,?,?)";
     private final static String SQL_GET =
             "SELECT `id`, `frilancer`, `minds`, `custominfo`, `description`," +
-                    " `title` FROM projectinfo";
+                    " `title`, `imgLink` FROM projectinfo";
     private final static String SET_NAMES = "SET NAMES utf8";
     private final static String SQL_UPDATE =
             "UPDATE projectinfo SET `id` = ?, `frilancer` = ?, `minds` = ?, `custominfo` = ?, `description` = ?," +
@@ -114,7 +116,8 @@ public class ProjectInfoDAO {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
                 UserInfoDAO userInfoDAO = new UserInfoDAO();
-                UserInfo userInfo = userInfoDAO.getUserInfoById(rs.getString("frilancer"));
+                UserInfo userInfo = new UserInfo();
+                userInfo.setLogin(rs.getString("frilancer"));
                 ArrayList<CustomerMind> customerMinds = new ArrayList<CustomerMind>();
                 CustomMindDAO customMindDAO = new CustomMindDAO();
                 String[] stringArray = rs.getString("minds").split("!");
@@ -124,7 +127,10 @@ public class ProjectInfoDAO {
                     }
                 }
                 CustomInfoDAO customInfoDAO = new CustomInfoDAO();
-                CustomInfo customInfo = customInfoDAO.getUserInfoByTitle(rs.getString("custominfo"));
+                CustomInfo customInfo = new CustomInfo("", "", "", new SimpleUserClass("", ""), new ArrayList<OrderInfo>());
+                if (!rs.getString("custominfo").equals("")){
+                    customInfo = customInfoDAO.getUserInfoByTitle(rs.getString("custominfo"));
+                }
 
                 String description = rs.getString("description");
                 String title = rs.getString("title");

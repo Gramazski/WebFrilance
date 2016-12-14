@@ -13,273 +13,13 @@
             <div class="panel panel-primary">
                 <div class="panel-heading"><h2>Your own cabinet</h2></div>
                 <c:set var="user" value="${user}" scope="page"></c:set>
-                <div class="panel-body">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#menu1">Data</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Portfolio && Minds</a></li>
-                        <li><a data-toggle="tab" href="#menu3">Orders && messages</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div id="menu1" class="tab-pane fade in active">
-                            <div class="panel-group" style="margin-top: 2%">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" href="#collapse1">Contact data</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse1" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-9">
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-sm-2" for="email">Email:</label>
-                                                            <div class="col-sm-10">
-                                                                <p class="form-control-static">${user.email}</p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-sm-2" for="email">Name:</label>
-                                                            <div class="col-sm-10">
-                                                                <p class="form-control-static">${user.name}</p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-sm-2" for="email">Surname:</label>
-                                                            <div class="col-sm-10">
-                                                                <p class="form-control-static">${user.surname}</p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-sm-2" for="email">Status:</label>
-                                                            <div class="col-sm-10">
-                                                                <p class="form-control-static">${user.role}</p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-sm-2" for="email">Средняя цена:</label>
-                                                            <div class="col-sm-10">
-                                                                <p class="form-control-static">${user.cost}$/h</p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-sm-2" for="email">Цена от:</label>
-                                                            <div class="col-sm-10">
-                                                                <p class="form-control-static">${user.costFrom}$</p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <form class="form-horizontal">
-                                                        <div class="form-group">
-                                                            <div class="thumbnails">
-                                                                <img src="${user.imgLink}" style="align-content: center; width: 100px">
-                                                                <div class="caption">
-                                                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pictData">Edit pict</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#contactData">Edit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" href="#collapse2">More data</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <form class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="control-label col-sm-2" for="email">Birthday:</label>
-                                                    <div class="col-sm-10">
-                                                        <p class="form-control-static">${user.birthday}</p>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <form class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="control-label col-sm-2" for="email">Country:</label>
-                                                    <div class="col-sm-10">
-                                                        <p class="form-control-static">${user.country}</p>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <form class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="control-label col-sm-2" for="email">Sex:</label>
-                                                    <div class="col-sm-10">
-                                                        <p class="form-control-static">${user.sex}</p>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <form class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="control-label col-sm-2" for="email">Description:</label>
-                                                    <div class="col-sm-10">
-                                                        <p class="form-control-static">${user.description}</p>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#moreData">Open Modal</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="menu2" class="tab-pane fade" style="margin-top: 2%">
-                            <div class="panel-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" href="#collapse3">Your portfolio</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse3" class="panel-collapse collapse">
-                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                            <!-- Indicators -->
-
-                                            <ol class="carousel-indicators">
-                                                <c:forEach var="project" items="${user.projectInfos}" varStatus="status">
-                                                    <li data-target="#myCarousel" data-slide-to="${status.count}" class="active"></li>
-                                                </c:forEach>
-                                            </ol>
-
-
-                                            <!-- Wrapper for slides -->
-                                            <div class="carousel-inner" role="listbox">
-                                                <c:forEach var="project" items="${user.projectInfos}">
-                                                    <div class="item active">
-                                                        <img src="${project.imgLink}" alt="Chania" style="width: 120px">
-                                                        <div class="carousel-caption">
-                                                            <h3><a href="#">${project.title}</a></h3>
-                                                        </div>
-                                                    </div>
-                                                </c:forEach>
-                                            </div>
-
-                                            <!-- Left and right controls -->
-                                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" href="#collapse4">YOur minds</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <c:forEach var="mind" items="${user.minds}">
-                                                <div class="row">
-                                                    <div class="pull-right hidden-xs" style="margin-right: 2%">
-                                                        <p class="text-muted">${mind.time}</p>
-                                                    </div>
-                                                    <div class="media" style="margin-left: 2%; margin-top: 5px; margin-bottom: 2%">
-                                                        <div class="media-left">
-                                                            <img src="${mind.author.imgLink}" class="media-object" style="width:70px">
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <a href="#"><h4 class="media-heading">${mind.author.name}</h4></a>
-                                                            <p>${mind.author.years}</p>
-                                                            <p>${mind.author.dateCreation}</p>
-                                                            <a href="#">Minds</a>
-                                                        </div>
-                                                        <hr style="margin-top: 2%; margin-bottom: 2%">
-                                                    </div>
-
-                                                    <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - customer mind</h4>
-                                                    <blockquote class="success" style="margin-left: 2%">
-                                                        <div class="spoiler">
-                                                            ${mind.body}
-                                                        </div>
-                                                    </blockquote>
-
-                                                </div>
-                                                <hr style="margin-top: 2%; margin-bottom: 2%">
-                                            </c:forEach>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="menu3" class="tab-pane fade" style="margin-top: 2%">
-                            <div class="panel-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" href="#collapse5">Orders</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse5" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <c:forEach var="order" items="${user.orders}">
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-sm-2" for="email">Order</label>
-                                                        <div class="col-sm-10">
-                                                            <p class="form-control-static"><a href="#">${order}</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </c:forEach>
-                                            <button type="submit" class="btn btn-primary btn-block-xs submit pull-right">Edit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" href="#collapse6">Forum themes</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapse6" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <c:forEach var="message" items="${user.messages}">
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-sm-2" for="email">Order</label>
-                                                        <div class="col-sm-10">
-                                                            <p class="form-control-static"><a href="#">${message}</a> </p>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </c:forEach>
-                                            <button type="submit" class="btn btn-primary btn-block-xs submit pull-right">Edit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <c:set var="role" value="${user.role}" scope="page"></c:set>
+                <c:if test="${role == 'customer'}">
+                    <c:import url="../../dynamic/customer_cabinet.jsp"></c:import>
+                </c:if>
+                <c:if test="${role != 'customer'}">
+                    <c:import url="../../dynamic/frilancer_cabinet.jsp"></c:import>
+                </c:if>
             </div>
         </div>
         <div class="col-sm-3 right-sidebar">
@@ -452,6 +192,83 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div id="editCustom" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit custom</h4>
+                </div>
+                <div class="modal-body">
+                    <c:set var="customsSize" value="${customs.size()}" scope="page"></c:set>
+                    <c:if test="${customsSize != 0}">
+                        <form class="form-horizontal" method="POST" action="/controller?command=UPDATE_CUSTOM&custom=${customs.get(0).name}">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="comment">Price:</label>
+                                <div class="col-sm-10">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span><input class="form-control" id="appendedPrependedInput" name="price" size="16" type="number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="comment">Type:</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="type" id="sel1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="comment">Description:</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="5" id="comment1" name="description"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default pull-right">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </c:if>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="deleteCustom" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit custom</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" method="POST" action="/controller?command=DELETE_CUSTOM">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="comment">Custom:</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="custom" name="custom" size="16" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default pull-right">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

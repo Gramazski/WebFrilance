@@ -34,34 +34,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - serverdb@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="projectinfo" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - serverdb@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="customminds" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -69,45 +41,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserInfoDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserInfoDAO.java">
+      <file leaf-file-name="ProjectInfoDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/info/ProjectInfoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
-                <element signature="method#addUserInfo#0;class#UserInfoDAO#0" expanded="false" />
-                <element signature="method#updateUserInfo#0;class#UserInfoDAO#0" expanded="false" />
-                <element signature="e#7349#7359#0" expanded="true" />
-                <element signature="e#8779#8793#0" expanded="true" />
-                <element signature="e#9282#9295#0" expanded="true" />
-                <element signature="e#9779#9787#0" expanded="true" />
-                <element signature="e#10151#10159#0" expanded="true" />
-                <marker date="1481665631966" expanded="true" signature="402:762" ph="INSERT INTO userinf... " />
-                <marker date="1481665631966" expanded="true" signature="820:1128" ph="SELECT * FRO... userinfo" />
-                <marker date="1481665631966" expanded="true" signature="826:1128" ph="INSERT INTO userinfo... " />
-                <marker date="1481665631966" expanded="true" signature="1251:1654" ph="UPDATE useri... " />
-                <marker date="1481665631966" expanded="true" signature="1251:1670" ph="UPDATE useri... " />
-                <marker date="1481665631966" expanded="true" signature="1257:1654" ph="INSERT INTO userinfo... " />
+                <element signature="e#4068#4081#0" expanded="true" />
+                <element signature="e#4648#4662#0" expanded="true" />
+                <marker date="1481743331981" expanded="true" signature="575:720" ph="INSERT INTO projectinfo... " />
+                <marker date="1481743331981" expanded="true" signature="778:902" ph="SELECT `id`,... projectinfo" />
+                <marker date="1481743331981" expanded="true" signature="1025:1176" ph="UPDATE proje... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java">
+      <file leaf-file-name="project_template.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/project/project_template.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddMindCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/action/command/AddMindCommand.java">
+      <file leaf-file-name="AddProjectServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AddProjectServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+            <state relative-caret-position="301">
+              <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,86 +79,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonalUserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/PersonalUserServlet.java">
+      <file leaf-file-name="LogInCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/action/command/LogInCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user/info/index.jsp">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
+            <state relative-caret-position="133">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serverdb.userinfo" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.userinfo">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serverdb.customminds" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.customminds">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPageServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/MainPageServlet.java">
+      <file leaf-file-name="PortfolioServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/PortfolioServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="method#createJumbotronTitle#0;class#MainPageServlet#0" expanded="false" />
-                <element signature="method#createNewsPanel#0;class#MainPageServlet#0" expanded="false" />
-                <element signature="method#createForumThemesPanel#0;class#MainPageServlet#0" expanded="false" />
-                <element signature="e#5368#5387#0" expanded="true" />
-                <element signature="method#createServiceStats#0;class#MainPageServlet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomInfoDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/custom/CustomInfoDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state relative-caret-position="9">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#CustomInfoDAO#0;class#CustomInfoDAO#0" expanded="false" />
-                <element signature="e#4332#4344#0" expanded="true" />
-                <element signature="e#5166#5177#0" expanded="true" />
-                <marker date="1481659560806" expanded="true" signature="412:579" ph="INSERT INTO projectinfo... " />
-                <marker date="1481659560806" expanded="true" signature="637:767" ph="SELECT `id`,... projectinfo" />
-                <marker date="1481659560806" expanded="true" signature="637:777" ph="SELECT `id`,... custominfo" />
-                <marker date="1481659560806" expanded="true" signature="900:1078" ph="UPDATE useri... " />
               </folding>
             </state>
           </provider>
@@ -203,16 +114,45 @@
       <file leaf-file-name="OrderInfoDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/order/OrderInfoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="-442">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#OrderInfoDAO#0;class#OrderInfoDAO#0" expanded="false" />
-                <element signature="e#3269#3280#0" expanded="true" />
-                <marker date="1481659359405" expanded="true" signature="335:460" ph="INSERT INTO projectinfo... " />
-                <marker date="1481659359405" expanded="true" signature="518:586" ph="SELECT `id`,... projectinfo" />
-                <marker date="1481659359405" expanded="true" signature="518:595" ph="SELECT ``id`... " />
-                <marker date="1481659359405" expanded="true" signature="718:848" ph="UPDATE useri... " />
+                <marker date="1481659359405" expanded="true" signature="335:460" ph="INSERT INTO orderinfo... " />
+                <marker date="1481659359405" expanded="true" signature="518:595" ph="SELECT id, `... orderinfo" />
+                <marker date="1481659359405" expanded="true" signature="718:848" ph="UPDATE order... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPageServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/MainPageServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ProjectServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/project/info/ProjectInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="35" />
+              <folding>
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -228,8 +168,8 @@
         <option value="Interface" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="JUnit4 Test Class" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -245,57 +185,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.reguser" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/registr/RegistrUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/user/info/AuthorizationUserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/auth/AuthUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/static/auth_menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/validator/session/SessionValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/info/storage/BaseUsersInfoStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/action/command/LogInCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/user/info/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/action/command/RegisterCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/PictEditServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/user/cabinet/cabinet_template.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/static/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/PersonalUserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/user/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/jsp/forum/message/ForumMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/project/info/ProjectInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/project/order/OrderInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/forum/ForumInfoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/jsp/forum/theme/ForumThemeClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/jsp/main/forum/ForumThemeClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/MainPageServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ForumServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/JobServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/ProjectServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/project/project_template.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/action/command/ChangeDataCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/project/custom/CustomInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/job/creation/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/action/command/CreateCustomCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/CustomServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/job/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/action/command/AddOrderCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/project/order/OrderInfoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/forum/message/ForumMessageDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/project/custom/CustomInfoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/project/info/ProjectInfoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/forum/ForumThemeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/job/tmpl/project_template.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/UserInfoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/action/list/CommandEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Mind/CustomerMind.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/mind/CustomMindDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/action/command/AddMindCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/MainPageServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/command/UpdateCustomCommand.java" />
+        <option value="dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.custominfo" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/job/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/project/custom/CustomInfoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/command/DeleteCustomCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/project/custom/CustomInfo.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/user/info/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/action/command/UpdateCustomFrilancer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/command/LogoutCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/list/CommandEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/forum/creation/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateNewThemeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ThemeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/MessageServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/forum/ForumThemeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/job/creation/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/forum/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/forum/theme/theme_template.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/validator/RegistrationDataValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/PersonalUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/user/cabinet/cabinet_template.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dynamic/frilancer_cabinet.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dynamic/customer_cabinet.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/protfolio/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/static/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/prortfolio/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/PortfolioServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/command/AddProjectCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/static/auth_menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/portfolio/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/project/info/ProjectInfoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/project/info/ProjectInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/ProjectServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/project/project_template.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/AddProjectServlet.java" />
       </list>
     </option>
   </component>
@@ -350,6 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -595,6 +536,10 @@
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -623,6 +568,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -749,6 +724,32 @@
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="forum" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -785,6 +786,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dynamic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -981,6 +1012,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1005,6 +1040,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="servlets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1133,6 +1190,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1612,36 +1673,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="registr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebFrilance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebFrilance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1679,10 +1710,6 @@
               <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="info" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1715,36 +1742,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebFrilance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebFrilance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mind" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1809,6 +1806,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebFrilance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1900,7 +1923,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -1925,18 +1947,19 @@
       <recent name="DAO.registr" />
       <recent name="DAO" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\img\works" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\img\forum\themes" />
       <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\img\avatars" />
-      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\jsp\job\tmpl" />
-      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\jsp" />
-      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\img\avatars" />
+      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\img\works" />
+      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\jsp\job\tmpl" />
+      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp\jsp" />
+      <recent name="C:\Users\gs\IdeaProjects\WebFrilance\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.LocalTomcat">
@@ -2529,6 +2552,7 @@
       <workItem from="1481459623228" duration="28617000" />
       <workItem from="1481554716596" duration="38365000" />
       <workItem from="1481625450638" duration="34122000" />
+      <workItem from="1481712328987" duration="27545000" />
     </task>
     <servers />
   </component>
@@ -2565,10 +2589,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192499000" />
+    <option name="totallyTimeSpent" value="220044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2580,25 +2604,25 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34814814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34666666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2591508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21010248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.111273795" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10175695" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32740742" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3748148" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2615,24 +2639,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlets/PictEditServlet.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/jsp/user/info/index.jsp</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/action/command/CreateCustomCommand.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/action/command/AddOrderCommand.java</url>
           <line>21</line>
@@ -2658,19 +2664,61 @@
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlets/PersonalUserServlet.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/main/webapp/jsp/user/info/index.jsp</url>
+          <line>133</line>
           <properties />
-          <option name="timeStamp" value="106" />
+          <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/jsp/user/info/index.jsp</url>
-          <line>126</line>
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/CreateNewThemeServlet.java</url>
+          <line>35</line>
           <properties />
-          <option name="timeStamp" value="107" />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/MessageServlet.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/MessageServlet.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/action/command/UpdateCustomCommand.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/jsp/dynamic/customer_cabinet.jsp</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/PictEditServlet.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/ProjectServlet.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/action/command/LogInCommand.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="128" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="108" />
+      <option name="time" value="129" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2679,225 +2727,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/auth/AuthUserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <marker date="1481565919225" expanded="true" signature="309:399" ph="INSERT INTO reguser... " />
-            <marker date="1481565919225" expanded="true" signature="457:500" ph="SELECT id, n... userinfo" />
-            <marker date="1481565919225" expanded="true" signature="549:587" ph="SELECT count... idtable" />
-            <marker date="1481565919225" expanded="true" signature="639:698" ph="SELECT count... idtable" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/authorization/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/forum/theme/theme_template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/LogInCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="42" column="5" selection-start-line="17" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/ActionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/RegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/project/custom/CustomInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="27" />
-          <folding>
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/project/project_template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/JobServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="117">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ForumServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-          <folding>
-            <element signature="method#createForumThemePanel#0;class#ForumServlet#0" expanded="false" />
-            <element signature="method#createThemesList#0;class#ForumServlet#0" expanded="false" />
-            <element signature="method#createProjectsList#0;class#ForumServlet#0" expanded="false" />
-            <element signature="method#createGeneralProjectsList#0;class#ForumServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ProjectServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-          <folding>
-            <element signature="method#createFrilancerAdvertising#0;class#ProjectServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/jsp/main/stats/ServiceStatsClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/job/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" expanded="false" />
-            <element signature="n#c:forEach#1;n#jsp:root#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/CreateCustomCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="116" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="116" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/works/frontend.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/works/java_site.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2433" column="0" selection-start-line="2433" selection-start-column="0" selection-end-line="2433" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.authuser">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.reguser">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/ChangeDataCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.custominfo">
+    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.forumtheme">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2912,58 +2758,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/jsp/forum/message/ForumMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
+        <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="method#ForumMessage#0;class#ForumMessage#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/registr/RegistrUserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/MessageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="148">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <marker date="1481560292876" expanded="true" signature="326:460" ph="INSERT INTO reguser... " />
-            <marker date="1481560292876" expanded="true" signature="518:657" ph="SELECT id, n... userinfo" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DAO/forum/ForumThemeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="117" selection-end-column="21" />
+        <state relative-caret-position="184">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#ForumThemeDAO#0;class#ForumThemeDAO#0" expanded="false" />
             <element signature="method#getForumThemeByName#0;class#ForumThemeDAO#0" expanded="false" />
-            <element signature="e#3504#3521#0" expanded="true" />
-            <element signature="e#4093#4107#0" expanded="true" />
-            <marker date="1481659688300" expanded="true" signature="366:460" ph="INSERT INTO projectinfo... " />
-            <marker date="1481659688300" expanded="true" signature="518:593" ph="SELECT `id`,... forumtheme" />
-            <marker date="1481659688300" expanded="true" signature="716:838" ph="UPDATE useri... " />
+            <marker date="1481732663832" expanded="true" signature="366:460" ph="INSERT INTO projectinfo... " />
+            <marker date="1481732663832" expanded="true" signature="518:593" ph="SELECT `id`,... forumtheme" />
+            <marker date="1481732663832" expanded="true" signature="716:838" ph="UPDATE useri... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/forum/message/ForumMessageDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="109" column="14" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ForumMessageDAO#0;class#ForumMessageDAO#0" expanded="false" />
-            <element signature="e#3135#3149#0" expanded="true" />
-            <marker date="1481659359098" expanded="true" signature="345:439" ph="INSERT INTO forummessage... " />
-            <marker date="1481659359098" expanded="true" signature="497:570" ph="SELECT id, `... forummessage" />
-            <marker date="1481659359098" expanded="true" signature="693:815" ph="UPDATE useri... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.orderinfo">
+    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.forummessage">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2976,187 +2801,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CustomServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateNewThemeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/info/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding>
-            <element signature="docComment;class#UserInfo#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/list/CommandEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/job/tmpl/project_template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/job/creation/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="54" column="38" selection-start-line="46" selection-start-column="32" selection-end-line="54" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/AddOrderCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        <state relative-caret-position="196">
+          <caret line="85" column="105" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="105" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user/cabinet/cabinet_template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="366" column="30" selection-start-line="362" selection-start-column="24" selection-end-line="366" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/info/ProjectInfoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ProjectInfoDAO#0;class#ProjectInfoDAO#0" expanded="false" />
-            <element signature="method#getUserInfoByTitle#0;class#ProjectInfoDAO#0" expanded="false" />
-            <element signature="e#3965#3978#0" expanded="true" />
-            <marker date="1481659688378" expanded="true" signature="483:628" ph="INSERT INTO projectinfo... " />
-            <marker date="1481659688378" expanded="true" signature="686:799" ph="SELECT `id`,... userinfo" />
-            <marker date="1481659688378" expanded="true" signature="922:1073" ph="UPDATE useri... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/ResultSetImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="2907" column="0" selection-start-line="2907" selection-start-column="0" selection-end-line="2907" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Mind/CustomerMind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/mind/CustomMindDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="105" column="82" selection-start-line="105" selection-start-column="82" selection-end-line="105" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CustomMindDAO#0;class#CustomMindDAO#0" expanded="false" />
-            <element signature="e#3255#3269#0" expanded="true" />
-            <marker date="1481668569863" expanded="true" signature="263:395" ph="INSERT INTO forumtheme... " />
-            <marker date="1481668569863" expanded="true" signature="453:537" ph="SELECT `id`,... customminds" />
-            <marker date="1481668569863" expanded="true" signature="660:799" ph="UPDATE forum... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/order/OrderInfoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#OrderInfoDAO#0;class#OrderInfoDAO#0" expanded="false" />
-            <element signature="e#3269#3280#0" expanded="true" />
-            <marker date="1481659359405" expanded="true" signature="335:460" ph="INSERT INTO projectinfo... " />
-            <marker date="1481659359405" expanded="true" signature="518:586" ph="SELECT `id`,... projectinfo" />
-            <marker date="1481659359405" expanded="true" signature="518:595" ph="SELECT ``id`... " />
-            <marker date="1481659359405" expanded="true" signature="718:848" ph="UPDATE useri... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/custom/CustomInfoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CustomInfoDAO#0;class#CustomInfoDAO#0" expanded="false" />
-            <element signature="e#4332#4344#0" expanded="true" />
-            <element signature="e#5166#5177#0" expanded="true" />
-            <marker date="1481659560806" expanded="true" signature="412:579" ph="INSERT INTO projectinfo... " />
-            <marker date="1481659560806" expanded="true" signature="637:767" ph="SELECT `id`,... projectinfo" />
-            <marker date="1481659560806" expanded="true" signature="637:777" ph="SELECT `id`,... custominfo" />
-            <marker date="1481659560806" expanded="true" signature="900:1078" ph="UPDATE useri... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/MainPageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="method#createJumbotronTitle#0;class#MainPageServlet#0" expanded="false" />
-            <element signature="method#createNewsPanel#0;class#MainPageServlet#0" expanded="false" />
-            <element signature="method#createForumThemesPanel#0;class#MainPageServlet#0" expanded="false" />
-            <element signature="e#5368#5387#0" expanded="true" />
-            <element signature="method#createServiceStats#0;class#MainPageServlet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserInfoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding>
-            <element signature="method#addUserInfo#0;class#UserInfoDAO#0" expanded="false" />
-            <element signature="method#updateUserInfo#0;class#UserInfoDAO#0" expanded="false" />
-            <element signature="e#7349#7359#0" expanded="true" />
-            <element signature="e#8779#8793#0" expanded="true" />
-            <element signature="e#9282#9295#0" expanded="true" />
-            <element signature="e#9779#9787#0" expanded="true" />
-            <element signature="e#10151#10159#0" expanded="true" />
-            <marker date="1481665631966" expanded="true" signature="402:762" ph="INSERT INTO userinf... " />
-            <marker date="1481665631966" expanded="true" signature="820:1128" ph="SELECT * FRO... userinfo" />
-            <marker date="1481665631966" expanded="true" signature="826:1128" ph="INSERT INTO userinfo... " />
-            <marker date="1481665631966" expanded="true" signature="1251:1654" ph="UPDATE useri... " />
-            <marker date="1481665631966" expanded="true" signature="1251:1670" ph="UPDATE useri... " />
-            <marker date="1481665631966" expanded="true" signature="1257:1654" ph="INSERT INTO userinfo... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3173,23 +2824,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/6a2d681e/e86a823f-7f1e-4030-8b1e-8b4357e751c4/serverdb.customminds">
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/forum/message/ForumMessageDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1096">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="method#ForumMessageDAO#0;class#ForumMessageDAO#0" expanded="false" />
+            <marker date="1481659359098" expanded="true" signature="345:439" ph="INSERT INTO forummessage... " />
+            <marker date="1481659359098" expanded="true" signature="497:570" ph="SELECT id, `... forummessage" />
+            <marker date="1481659359098" expanded="true" signature="693:815" ph="UPDATE useri... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/job/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="76" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/job/tmpl/project_template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/job/creation/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/AddMindCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/forum/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/forum/theme/theme_template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/RegisterCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/validator/RegistrationDataValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/UpdateCustomCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3198,16 +2905,315 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/PersonalUserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user/info/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ThemeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
+        <state relative-caret-position="392">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CustomServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1204#1216#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dynamic/frilancer_cabinet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="224" column="47" selection-start-line="224" selection-start-column="47" selection-end-line="224" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/static/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2363">
+          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+          <folding>
+            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" expanded="false" />
+            <element signature="n#c:forEach#1;n#jsp:root#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/ChangeDataCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1658">
+          <caret line="114" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="114" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/AddProjectCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="114" column="5" selection-start-line="76" selection-start-column="4" selection-end-line="114" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/jsp/project/info/user/SimpleUserClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/jsp/project/info/ProjectInfoClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dynamic/customer_cabinet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="110" column="132" selection-start-line="110" selection-start-column="89" selection-end-line="110" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/static/auth_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/portfolio/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="110" column="100" selection-start-line="110" selection-start-column="100" selection-end-line="110" selection-end-column="100" />
+          <folding>
+            <element signature="e#4459#4466#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user/cabinet/cabinet_template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1751">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#3130#3137#0#HTML" expanded="true" />
+            <element signature="e#5670#5677#0#HTML" expanded="true" />
+            <element signature="e#7043#7050#0#HTML" expanded="true" />
+            <element signature="e#9866#9873#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/PictEditServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar!/org/apache/commons/fileupload/servlet/ServletFileUpload.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2907" column="0" selection-start-line="2907" selection-start-column="0" selection-end-line="2907" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="207" column="79" selection-start-line="207" selection-start-column="79" selection-end-line="207" selection-end-column="79" />
+          <folding>
+            <element signature="e#7349#7359#0" expanded="true" />
+            <element signature="e#8779#8793#0" expanded="true" />
+            <marker date="1481665631966" expanded="true" signature="402:762" ph="INSERT INTO userinfo... " />
+            <marker date="1481665631966" expanded="true" signature="820:1128" ph="SELECT `id`,... userinfo" />
+            <marker date="1481665631966" expanded="true" signature="1251:1670" ph="UPDATE useri... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/info/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="docComment;class#UserInfo#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/project/custom/CustomInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/custom/CustomInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="method#CustomInfoDAO#0;class#CustomInfoDAO#0" expanded="false" />
+            <element signature="method#getUserInfoByTitle#0;class#CustomInfoDAO#0" expanded="false" />
+            <element signature="method#getAllCustoms#0;class#CustomInfoDAO#0" expanded="false" />
+            <marker date="1481724999387" expanded="true" signature="412:579" ph="INSERT INTO projectinfo... " />
+            <marker date="1481724999387" expanded="true" signature="637:767" ph="SELECT `id`,... projectinfo" />
+            <marker date="1481724999387" expanded="true" signature="637:777" ph="SELECT `id`,... custominfo" />
+            <marker date="1481724999387" expanded="true" signature="900:1078" ph="UPDATE useri... " />
+            <marker date="1481724999387" expanded="true" signature="1127:1164" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/order/OrderInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <marker date="1481659359405" expanded="true" signature="335:460" ph="INSERT INTO orderinfo... " />
+            <marker date="1481659359405" expanded="true" signature="518:595" ph="SELECT id, `... orderinfo" />
+            <marker date="1481659359405" expanded="true" signature="718:848" ph="UPDATE order... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/MainPageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/project/info/ProjectInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#4068#4081#0" expanded="true" />
+            <element signature="e#4648#4662#0" expanded="true" />
+            <marker date="1481743331981" expanded="true" signature="575:720" ph="INSERT INTO projectinfo... " />
+            <marker date="1481743331981" expanded="true" signature="778:902" ph="SELECT `id`,... projectinfo" />
+            <marker date="1481743331981" expanded="true" signature="1025:1176" ph="UPDATE proje... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/project/info/ProjectInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="35" />
+          <folding>
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ProjectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/PortfolioServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/project/project_template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/AddProjectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/command/LogInCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>

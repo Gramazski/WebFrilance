@@ -6,10 +6,15 @@
     <c:import url="../static/header.jsp" />
 </head>
 <body>
-<c:import url="../static/menu.jsp" />
+<c:if test="${sessionFlag == true}">
+    <c:import url="/jsp/static/auth_menu.jsp" />
+</c:if>
+<c:if test="${sessionFlag != true}">
+    <c:import url="/jsp/static/menu.jsp" />
+</c:if>
 <div class="container">
     <div class="jumbotron">
-        <c:set var="project" value="${project}" scope="page"></c:set>
+        <c:set var="project" value="${projectInfo}" scope="page"></c:set>
         <div class="row">
             <div class="col-sm-8">
                 <div class="media" style="margin-left: 2%; margin-top: 5px; margin-bottom: 2%">
@@ -22,7 +27,6 @@
                             <br>
                             ${project.frilancer.dateCreation}
                             <br>
-                            <a href="#">Minds</a>
                         </p>
 
                     </div>
@@ -53,14 +57,14 @@
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                            <c:forEach var="image" items="${project.images}" varStatus="status">
+                            <c:forEach var="image" items="${project.imgLink}" varStatus="status">
                                 <li data-target="#myCarousel" data-slide-to="${status.count}" class="active"></li>
                             </c:forEach>
                         </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                            <c:forEach var="image" items="${project.images}">
+                            <c:forEach var="image" items="${project.imgLink}">
                                 <div class="item active">
                                     <img src="${image}" alt="Chania">
                                 </div>
@@ -83,40 +87,44 @@
                 </div>
             </div>
             <div class="panel panel-default">
-                <c:set var="mind" value="${project.frilancer.minds.get(0)}" scope="page"></c:set>
-                <div class="panel-heading">
-                    <div class="pull-right hidden-xs" style="margin-right: 2%">
-                        <a href="#">All minds</a>
-                    </div>
-                    <b class="h3">Last mind</b>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
+                <c:set var="count" value="${project.frilancer.minds.size()}" scope="page"></c:set>
+                <c:if test="${count != 0}">
+                    <c:set var="mind" value="${project.frilancer.minds.get(0)}" scope="page"></c:set>
+                    <div class="panel-heading">
                         <div class="pull-right hidden-xs" style="margin-right: 2%">
-                            <p class="text-muted">${mind.time}</p>
+                            <a href="#">All minds</a>
                         </div>
-                        <div class="media" style="margin-left: 2%; margin-top: 5px; margin-bottom: 2%">
-                            <div class="media-left">
-                                <img src="${mind.author.imgLink}" class="media-object" style="width:70px">
-                            </div>
-                            <div class="media-body">
-                                <a href="#"><h4 class="media-heading">${mind.author.name}</h4></a>
-                                <p>${mind.author.years}</p>
-                                <p>${mind.author.dateCreation}</p>
-                                <a href="#">Minds</a>
-                            </div>
-                            <hr style="margin-top: 2%; margin-bottom: 2%">
-                        </div>
-
-                        <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - customer mind</h4>
-                        <blockquote class="success" style="margin-left: 2%">
-                            <div class="spoiler">
-                                ${mind.author.body}
-                            </div>
-                        </blockquote>
-
+                        <b class="h3">Last mind</b>
                     </div>
-                </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="pull-right hidden-xs" style="margin-right: 2%">
+                                <p class="text-muted">${mind.time}</p>
+                            </div>
+                            <div class="media" style="margin-left: 2%; margin-top: 5px; margin-bottom: 2%">
+                                <div class="media-left">
+                                    <img src="${mind.author.imgLink}" class="media-object" style="width:70px">
+                                </div>
+                                <div class="media-body">
+                                    <a href="#"><h4 class="media-heading">${mind.author.name}</h4></a>
+                                    <p>${mind.author.years}</p>
+                                    <p>${mind.author.dateCreation}</p>
+                                    <a href="#">Minds</a>
+                                </div>
+                                <hr style="margin-top: 2%; margin-bottom: 2%">
+                            </div>
+
+                            <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - customer mind</h4>
+                            <blockquote class="success" style="margin-left: 2%">
+                                <div class="spoiler">
+                                        ${mind.author.body}
+                                </div>
+                            </blockquote>
+
+                        </div>
+                    </div>
+                </c:if>
+
             </div>
         </div>
         <div class="col-sm-4 right-sidebar">

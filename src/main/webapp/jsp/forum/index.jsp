@@ -6,7 +6,12 @@
     <c:import url="../static/header.jsp" />
 </head>
 <body>
-<c:import url="../static/menu.jsp" />
+<c:if test="${sessionFlag == true}">
+    <c:import url="/jsp/static/auth_menu.jsp" />
+</c:if>
+<c:if test="${sessionFlag != true}">
+    <c:import url="/jsp/static/menu.jsp" />
+</c:if>
 <div class="container">
     <div class="jumbotron">
         <c:set var="pageCreationFlag" value="${pageCreation}" scope="page"/>
@@ -14,7 +19,14 @@
             <c:redirect url="/forumcontrol"></c:redirect>
         </c:if>
         <c:remove var="pageCreationFlag"></c:remove>
-        <h2 style="margin-top: -5px">Форум фриланс-сообщества</h2>
+        <div class="row">
+            <div class="col-sm-8">
+                <h2 style="margin-top: -5px">Форум фриланс-сообщества</h2>
+            </div>
+            <div class="col-sm-4">
+                <a href="#pictData" data-toggle="modal" data-target="#pictData" style="width: 100%" class="btn btn-large btn-success"> Create theme</a>
+            </div>
+        </div>
 
         <hr style="margin-top: 2%; margin-bottom: 2%">
         <ul class="breadcrumb">
@@ -84,8 +96,45 @@
             </div>
         </div>
     </div>
-
 </div>
+
+<div id="pictData" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal" method="POST" action="/newtheme" enctype="multipart/form-data">
+                    <input type="hidden" name="command" value="CHANGE_DATA" />
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Title:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="country" name="country" placeholder="Enter country">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Picture:</label>
+                        <div class="col-sm-10">
+                            <input type="file" name="file_to_upload" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default pull-right">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <c:import url="../static/footer.jsp" />
 </body>
 </html>

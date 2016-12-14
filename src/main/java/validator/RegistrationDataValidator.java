@@ -43,7 +43,7 @@ public class RegistrationDataValidator {
     }
 
     private boolean checkUserName(String userName){
-        String regexp = "[А-Яа-я]+";
+        String regexp = "[A-Za-z]+";
 
         Pattern pattern = Pattern.compile(regexp);
         Matcher matcher = pattern.matcher(userName);

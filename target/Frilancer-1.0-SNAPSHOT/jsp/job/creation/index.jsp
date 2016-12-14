@@ -6,7 +6,12 @@
     <c:import url="../../static/header.jsp" />
 </head>
 <body>
-<c:import url="../../static/menu.jsp" />
+<c:if test="${sessionFlag == true}">
+    <c:import url="/jsp/static/auth_menu.jsp" />
+</c:if>
+<c:if test="${sessionFlag != true}">
+    <c:import url="/jsp/static/menu.jsp" />
+</c:if>
 <div class="container">
     <div class="jumbotron">
 

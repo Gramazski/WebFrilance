@@ -124,7 +124,6 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel panel-default">
-                    <c:set var="mind" value="${user.minds.get(0)}" scope="page"></c:set>
                     <div class="panel-heading">
                         <div class="pull-right hidden-xs" style="margin-right: 2%">
                             <a href="#">All minds</a>
@@ -132,28 +131,32 @@
                         <b class="h3">Last mind</b>
                     </div>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="pull-right hidden-xs" style="margin-right: 2%">
-                                <p class="text-muted">${mind.time}</p>
-                            </div>
-                            <div class="media" style="margin-left: 2%; margin-top: 5px; margin-bottom: 2%">
-                                <div class="media-left">
-                                    <img src="${mind.title}" class="media-object" style="width:70px">
+                        <c:set var="minds" value="${user.minds.size()}" scope="page"></c:set>
+                        <c:if test="${minds != 0}">
+                            <c:set var="mind" value="${user.minds.get(0)}" scope="page"></c:set>
+                            <div class="row">
+                                <div class="pull-right hidden-xs" style="margin-right: 2%">
+                                    <p class="text-muted">${mind.time}</p>
                                 </div>
-                                <div class="media-body">
-                                    <a href="#"><h4 class="media-heading">${mind.author}</h4></a>
+                                <div class="media" style="margin-left: 2%; margin-top: 5px; margin-bottom: 2%">
+                                    <div class="media-left">
+                                        <img src="${mind.title}" class="media-object" style="width:70px">
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#"><h4 class="media-heading">${mind.author}</h4></a>
+                                    </div>
+                                    <hr style="margin-top: 2%; margin-bottom: 2%">
                                 </div>
-                                <hr style="margin-top: 2%; margin-bottom: 2%">
-                            </div>
 
-                            <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - customer mind</h4>
-                            <blockquote class="success" style="margin-left: 2%">
-                                <div class="spoiler">
-                                    ${mind.body}
-                                </div>
-                            </blockquote>
+                                <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - customer mind</h4>
+                                <blockquote class="success" style="margin-left: 2%">
+                                    <div class="spoiler">
+                                            ${mind.body}
+                                    </div>
+                                </blockquote>
 
-                        </div>
+                            </div>
+                        </c:if>
                         <c:if test="${sessionFlag == true}">
                             <div class="panel-footer">
                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#leaveMind">Leave mind</button>
@@ -193,7 +196,7 @@
                     <b class="h3">View contact data</b>
                 </div>
                 <div class="panel-body">
-                    <a href="#" style="width: 100%" class="btn btn-large btn-success"> Advise custom</a>
+                    <a href="#viewData" data-toggle="modal" data-target="#viewData" style="width: 100%" class="btn btn-large btn-success"> View</a>
                 </div>
             </div>
         </div>
@@ -237,6 +240,41 @@
             </div>
         </div>
 
+    </div>
+</div>
+
+<div id="viewData" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Contact data</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="POST" action="/controller?command=DELETE_CUSTOM">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Name:</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">${user.name}</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Surbane:</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">${user.surname}</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">Email:</label>
+                        <div class="col-sm-10">
+                            <p class="form-control-static">${user.email}</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -59,4 +59,8 @@ public class ProjectInfo {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public void setFrilancer(UserInfo frilancer) {
+        this.frilancer = frilancer;
+    }
 }
