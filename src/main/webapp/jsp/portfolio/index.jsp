@@ -58,7 +58,7 @@
         <div class="col-sm-4 right-sidebar">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Реклама фрилансеров</b>
+                    <b class="h3">Frilancer advertising</b>
                 </div>
                 <div class="panel-body">
                     <c:set var="advertising" value="${advertising}" scope="page"></c:set>
@@ -72,13 +72,10 @@
                     </div>
                     ${advertising.description}
                 </div>
-                <div class="panel-footer">
-                    <a href="#">Как разместить здесь рекламу »</a>
-                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">ТОП-10 фрилансеров</b>
+                    <b class="h3">Frilancers top</b>
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">

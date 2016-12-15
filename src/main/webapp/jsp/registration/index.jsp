@@ -17,7 +17,7 @@
                 <div class="panel-body">
                     <div class="alert alert-info alert-dismissable">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                        <strong>Info!</strong> You can't change your email and login after registration.
                     </div>
                     <form name="loginForm" method="POST" action="<c:url value="/controller"/>">
                         <input type="hidden" name="command" value="REGISTR" />
@@ -44,7 +44,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label class="required">Пол</label>
+                                <label class="required">Sex</label>
                                 <div>
                                     <label class="radio-inline"><input type="radio" name="sex" value="male" checked="">Мужской</label>
                                     <label class="radio-inline"><input type="radio" name="sex" value="female">Женский</label>
@@ -62,7 +62,7 @@
                         <div class="form-group">
                             <label for="login">Login:</label>
                             <input type="text" class="form-control" id="login" name="login" placeholder="Enter login">
-                            <span id="error_login" class="help-block">${errorLogin}</span>
+                            <span id="error_login" class="help-block" style="color: red">${errorLogin}</span>
                             <!--<label class="control-label">Incorrect email</label>-->
                         </div>
                         <div class="form-group">

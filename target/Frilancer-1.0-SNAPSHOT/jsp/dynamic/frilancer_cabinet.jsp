@@ -52,7 +52,7 @@
                                     </form>
                                     <form class="form-horizontal">
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="email">Средняя цена:</label>
+                                            <label class="control-label col-sm-2" for="email">Avarage cost:</label>
                                             <div class="col-sm-10">
                                                 <p class="form-control-static">${user.cost}$/h</p>
                                             </div>
@@ -60,7 +60,7 @@
                                     </form>
                                     <form class="form-horizontal">
                                         <div class="form-group">
-                                            <label class="control-label col-sm-2" for="email">Цена от:</label>
+                                            <label class="control-label col-sm-2" for="email">Cost from:</label>
                                             <div class="col-sm-10">
                                                 <p class="form-control-static">${user.costFrom}$</p>
                                             </div>
@@ -124,7 +124,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#moreData">Open Modal</button>
+                            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#moreData">Edit</button>
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,6 @@
                                     </div>
                                 </form>
                             </c:forEach>
-                            <button type="submit" class="btn btn-primary btn-block-xs submit pull-right">Edit</button>
                         </div>
                     </div>
                 </div>
@@ -254,7 +253,6 @@
                                     </div>
                                 </form>
                             </c:forEach>
-                            <button type="submit" class="btn btn-primary btn-block-xs submit pull-right">Edit</button>
                         </div>
                     </div>
                 </div>

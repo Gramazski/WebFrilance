@@ -39,25 +39,6 @@
                     </div>
                     ${advertising.description}
                 </div>
-                <div class="panel-footer">
-                    <a href="#">Как разместить здесь рекламу »</a>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="pull-right hidden-xs">
-                        <p class="text-muted">3.5k</p>
-                    </div>
-                    <b class="h3">Все категории</b>
-                </div>
-                <div class="panel-body">
-                    <c:forEach var="category" items="${categories}">
-                        <div class="pull-right hidden-xs">
-                            <p class="text-muted">${category.visitingCount}</p>
-                        </div>
-                        <p><a href="${category.link}">${category.name}</a></p>
-                    </c:forEach>
-                </div>
             </div>
         </div>
     </div>
@@ -70,7 +51,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Edit data</h4>
                 </div>
                 <div class="modal-body">
 
@@ -79,13 +60,13 @@
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="email">Cost:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="cost" name="cost" placeholder="Enter email">
+                                <input type="text" class="form-control" id="cost" name="cost" placeholder="Enter cost">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="email">CostF from:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="costFrom" name="costFrom" placeholder="Enter email">
+                                <input type="text" class="form-control" id="costFrom" name="costFrom" placeholder="Enter cost from">
                             </div>
                         </div>
                         <div class="form-group">
@@ -97,7 +78,7 @@
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="pwd">Surname:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="surName" name="surname" placeholder="Enter name">
+                                <input type="text" class="form-control" id="surName" name="surname" placeholder="Enter surname">
                             </div>
                         </div>
                         <div class="form-group">
@@ -119,7 +100,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Edit data</h4>
                 </div>
                 <div class="modal-body">
 
@@ -151,7 +132,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Edit data</h4>
                 </div>
                 <div class="modal-body">
                     <form class="form-horizontal" method="POST" action="<c:url value="/controller"/>">
@@ -218,10 +199,9 @@
                                 <label class="control-label col-sm-2" for="comment">Type:</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" name="type" id="sel1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
+                                        <option>Web-programming</option>
+                                        <option>OS creating</option>
+                                        <option>Web administrating</option>
                                     </select>
                                 </div>
                             </div>

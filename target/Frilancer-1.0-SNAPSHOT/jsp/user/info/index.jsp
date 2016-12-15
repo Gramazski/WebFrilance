@@ -27,21 +27,20 @@
                             <br>
                             ${user.dateCreation}
                             <br>
-                            <a href="#">Minds</a>
                         </p>
 
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <a href="/untitled/pages/registration/" style="width: 100%" class="btn btn-large btn-success"> Advise custom</a>
-                <a href="/untitled/pages/registration/" style="width: 100%; margin-top: 3%" class="btn btn-large btn-primary"> Write a message</a>
+                <a href="#" style="width: 100%" class="btn btn-large btn-success"> Advise custom</a>
+                <a href="#" style="width: 100%; margin-top: 3%" class="btn btn-large btn-primary"> Write a message</a>
             </div>
         </div>
 
         <hr style="margin-top: 2%; margin-bottom: 2%">
         <ul class="breadcrumb">
-            <li><a href="/untitled/">Frilancer.com</a></li>
+            <li><a href="/index.jsp">Frilancer.com</a></li>
             <li><a href="#">Frilancer</a></li>
             <li class="active">Information</li>
         </ul>
@@ -55,23 +54,23 @@
                         <div class="col-sm-4 col-md-3" style="border-right: 1px solid #F1F1F1; margin-top: -5px">
                             <div class="main_stats" >
                                 <div class="h3">${user.points}</div>
-                                <div class="text-muted">по оценкам заказчиков</div>
+                                <div class="text-muted">customers apriciate</div>
                             </div>
                             <div class="main_stats">
                                 <div class="h3">100%</div>
-                                <div class="text-muted">заказчиков рекомендуют</div>
+                                <div class="text-muted">customers recommend</div>
                             </div>
                             <div class="main_stats">
                                 <div class="h3">29%</div>
-                                <div class="text-muted">заявок приняты заказчиками</div>
+                                <div class="text-muted">orders allows</div>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-9">
-                            <div class="pull-right small text-muted hidden-xs">Статистика фрилансера за год</div>
+                            <div class="pull-right small text-muted hidden-xs">Stats for year</div>
                             <div class="top_freelancer">
                                 <span class="text-nowrap top_label_box">
                                     <span class="label top_label label-default" data-toggle="tooltip" title="" data-original-title="24-й в каталоге фрилансеров">1</span>
-                                    — Веб-программирование
+                                    — Web-programming
                                 </span>
                             </div>
                             <div class="top_freelancer">
@@ -148,7 +147,7 @@
                                     <hr style="margin-top: 2%; margin-bottom: 2%">
                                 </div>
 
-                                <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - customer mind</h4>
+                                <h4 class="text-muted" style="margin-left: 2%"><a href="#" >Last work</a> - ${mind.mark}</h4>
                                 <blockquote class="success" style="margin-left: 2%">
                                     <div class="spoiler">
                                             ${mind.body}
@@ -173,22 +172,21 @@
                 </div>
                 <div class="panel-body">
                     <div class="pull-right hidden-xs">
-                        <p class="text-muted">200</p>
+                        <p class="text-muted">2</p>
                     </div>
                     <p><a href="#">Customs</a></p>
 
                     <div class="pull-right hidden-xs">
-                        <p class="text-muted">50</p>
+                        <p class="text-muted">4</p>
                     </div>
                     <p><a href="#">Portfolio</a></p>
                     <div class="pull-right hidden-xs">
-                        <p class="text-muted">120</p>
+                        <p class="text-muted">1</p>
                     </div>
                     <p><a href="#">Prices</a></p>
                     <div class="pull-right hidden-xs">
-                        <p class="text-muted">504</p>
+                        <p class="text-muted">2</p>
                     </div>
-                    <p><a href="#">Minds</a></p>
                 </div>
             </div>
             <div class="panel panel-default">
@@ -210,13 +208,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Оставить отзыв</h4>
+                <h4 class="modal-title">Leave mind</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" method="POST" action="/controller?command=ADD_MIND&frilancer=${user.login}">
                     <input type="hidden" name="command" value="CHANGE_DATA" />
                     <div class="form-group" class="col-sm-offset-2 col-sm-10">
-                        <label for="sel1">Оценка:</label>
+                        <label for="sel1">Mark:</label>
                         <select class="form-control" name="mark" id="sel1">
                             <option>1</option>
                             <option>2</option>
@@ -226,14 +224,14 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" for="comment">Отзыв:</label>
+                        <label class="control-label col-sm-2" for="comment">Mind:</label>
                         <div class="col-sm-10">
                             <textarea class="form-control" rows="5" id="comment" name="body"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default pull-right">Submit</button>
+                            <button type="submit" class="btn btn-default pull-right">Leave</button>
                         </div>
                     </div>
                 </form>

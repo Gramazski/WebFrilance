@@ -51,21 +51,21 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Ваша заявка к этому проекту</b>
+                    <b class="h3">Add order</b>
                 </div>
                 <div class="panel-body">
                     <c:if test="${sessionFlag == true}">
                         <a href="/controller?command=ADD_ORDER&custom=${projectInfo.name}" style="width: 100%" class="btn btn-large btn-success"> Оставить заявку!</a>
                     </c:if>
                     <c:if test="${sessionFlag != true}">
-                        <a href="/jsp/registration">Войдите в аккаунт</a>, чтобы добавить заявку и открыть данные заказчика.
+                        <a href="/jsp/registration">Enter your account</a>, for add an order.
                     </c:if>
 
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Заявки фрилансеров</b>
+                    <b class="h3">Frilancers orders</b>
                 </div>
                 <div class="panel-body">
                     <c:forEach var="frilancerOrder" items="${projectInfo.frilancersOrders}">
@@ -81,12 +81,11 @@
                                     <a href="#"><h4 class="media-heading">${frilancerOrder.frilancer.name}</h4></a>
                                     <p>${frilancerOrder.frilancer.years}</p>
                                     <p>с ${frilancerOrder.frilancer.dateCreation}</p>
-                                    <a href="#">Minds</a>
                                 </div>
                             </div>
                             <span class="text-nowrap top_label_box" style="margin-left: 2%">
                             <span class="label top_label label-default" data-toggle="tooltip" title="" data-original-title="Count of done projects in this">${frilancerOrder.customes}</span>
-                            — Веб-программирование
+                            — Web-programming
                         </span>
 
                         </div>
@@ -96,16 +95,16 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Похожие заказы</b>
+                    <b class="h3">Same customs</b>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-sm-12">
                             <h4 class="title">
-                                <a href="#">Xml парсер и ресайз картинок</a>
+                                <a href="#">Scripts parcing </a>
                             </h4>
                             <div class="small text-muted">
-                                Есть скрипт каталога ссылок(http://www.full-soft.com), к нему нужно дописать две вещи, 1. xml парсер (для пад-файлов) как на xttp://www.getsomesoft.net/submit.html......т.е. чтобы при указании урла к xml файлу данные из него загонялись в mysql базу+ ...
+                                In most cases, the long description should be available to all users. This long description will not only assist blind users but also sighted users who may not understand a complex image.
                             </div>
                         </div>
                     </div>
@@ -113,10 +112,10 @@
                     <div class="row" style="background-color: #F7FAFA">
                         <div class="col-sm-12">
                             <h4 class="title">
-                                <a href="#">Xml парсер и ресайз картинок</a>
+                                <a href="#">Enhole parcers mapping</a>
                             </h4>
                             <div class="small text-muted">
-                                Есть скрипт каталога ссылок(http://www.full-soft.com), к нему нужно дописать две вещи, 1. xml парсер (для пад-файлов) как на xttp://www.getsomesoft.net/submit.html......т.е. чтобы при указании урла к xml файлу данные из него загонялись в mysql базу+ ...
+                                In most cases, the long description should be available to all users. This long description will not only assist blind users but also sighted users who may not understand a complex image.
                             </div>
                         </div>
                     </div>
@@ -126,7 +125,7 @@
         <div class="col-sm-4 right-sidebar">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Реклама фрилансеров</b>
+                    <b class="h3">Frilancer advertising</b>
                 </div>
                 <div class="panel-body">
                     <c:set var="advertising" value="${advertising}" scope="page"></c:set>
@@ -140,13 +139,10 @@
                     </div>
                     ${advertising.description}
                 </div>
-                <div class="panel-footer">
-                    <a href="#">Как разместить здесь рекламу »</a>
-                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">ТОП-10 фрилансеров</b>
+                    <b class="h3">Frilancer TOP</b>
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
@@ -163,11 +159,11 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Статистика заказа</b>
+                    <b class="h3">Stats</b>
                 </div>
                 <div class="panel-body">
                     <c:set var="stats" value="${stats}" scope="page"></c:set>
-                    <p>${stats.open} заявки</p>
+                    <p>${stats.open} orders</p>
                     <p>${stats.complete} watches</p>
                 </div>
             </div>

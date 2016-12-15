@@ -100,7 +100,12 @@ public class MainPageServlet extends HttpServlet {
 
     private void createFrilancerAdvertising(HttpServletRequest request){
         UserInfoDAO userInfoDAO = new UserInfoDAO();
-        UserInfo userInfo = userInfoDAO.getAllUsers().get(0);
+        UserInfo userInfo = new UserInfo();
+        ArrayList<UserInfo> userInfos = userInfoDAO.getAllUsers();
+        if (userInfos != null && userInfos.size() != 0){
+            userInfo = userInfos.get(0);
+        }
+
         AdvertisingFrilancerClass advertisingFrilancerClass = new AdvertisingFrilancerClass(userInfo.getImgLink(),
                 "/personaluser?login=" + userInfo.getLogin(), userInfo.getLogin(), userInfo.getDescription());
 

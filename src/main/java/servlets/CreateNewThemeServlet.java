@@ -34,7 +34,7 @@ public class CreateNewThemeServlet extends HttpServlet {
             if (ServletFileUpload.isMultipartContent(request)) {
                 try {
                     String title = request.getParameter("title");
-                    processMultipartRequest(request, response, title);
+                    processMultipartRequest(request, response);
                 } catch (Exception exception) {
                 }
             }
@@ -47,13 +47,14 @@ public class CreateNewThemeServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    private void processMultipartRequest(HttpServletRequest request, HttpServletResponse response, String title)
+    private void processMultipartRequest(HttpServletRequest request, HttpServletResponse response)
             throws Exception {
         ServletFileUpload servletFileUpload = new ServletFileUpload(new DiskFileItemFactory());
         Iterator<FileItem> iterator = servletFileUpload.parseRequest(request).iterator();
 
         FileItem fileToUpload = null;
         String fileName = null;
+        String title = null;
         while (iterator.hasNext()) {
             FileItem item = iterator.next();
             if (!item.isFormField()) {
@@ -65,10 +66,10 @@ public class CreateNewThemeServlet extends HttpServlet {
                 }
             }
             else {
-                if ("file_name".equals(item.getFieldName())) {
+                if ("title".equals(item.getFieldName())) {
                     if (item.getString() == null || "".equals(item.getString())) {
                     }
-                    fileName = item.getString();
+                    title = item.getString();
                 }
             }
         }
@@ -83,7 +84,7 @@ public class CreateNewThemeServlet extends HttpServlet {
         File uploadedFile = new File(getServletContext().getRealPath("/img/forum/themes"), fileName);
         fileItem.write(uploadedFile);
         ForumThemeClass forumThemeClass =
-                new ForumThemeClass(new SimpleDateFormat("dd.MM.yyyy").format(System.currentTimeMillis()), "Forum theme",
+                new ForumThemeClass(new SimpleDateFormat("dd.MM.yyyy").format(System.currentTimeMillis()), title,
                         "/img/forum/themes/" + fileName, "", new ArrayList<ForumMessage>());
         ForumThemeDAO forumThemeDAO = new ForumThemeDAO();
         forumThemeDAO.addForumTheme(forumThemeClass);

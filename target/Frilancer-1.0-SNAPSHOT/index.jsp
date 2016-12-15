@@ -40,7 +40,7 @@
         <c:if test="${sessionFlag != true}">
             <div class="row">
                 <div class="col-sm-4">
-                    <a href="/jsp/registration/" style="width: 100%" class="btn btn-large btn-success"> Присоединяйтесь!</a>
+                    <a href="/jsp/registration/" style="width: 100%" class="btn btn-large btn-success"> Come on!</a>
                 </div>
             </div>
         </c:if>
@@ -51,7 +51,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="pull-right hidden-xs">
-                        <a href="#">Все новости site</a>
+                        <a href="#">All news</a>
                     </div>
                     <c:set var="someNews" value="${someNews}" scope="page"></c:set>
                     <b class="h3">${someNews.title}</b>
@@ -61,7 +61,7 @@
                         <span data-toggle="tooltip" title="" data-timestamp="1478855729" class="time_ago" data-original-title="${someNews.totalTime}">${someNews.timeAgo}</span>
                     </div>
                     ${someNews.body}
-                    <a class="text-nowrap" href="#" rel="nofollow">Читать далее →</a>
+                    <a class="text-nowrap" href="#" rel="nofollow">Read more →</a>
                 </div>
             </div>
             <div class="panel panel-default">
@@ -69,7 +69,7 @@
                     <div class="pull-right hidden-xs">
                         <a href="/projects">All frilancers works</a>
                     </div>
-                    <b class="h3">Новые работы фрилансеров</b>
+                    <b class="h3">New works</b>
                 </div>
                 <div class="panel-body">
                     <div class="row">
@@ -91,9 +91,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="pull-right hidden-xs">
-                        <a href="/jsp/job/">Все заказы</a>
+                        <a href="/jsp/job/">All orders</a>
                     </div>
-                    <b class="h3">Рекомендуемые заказы</b>
+                    <b class="h3">Recommended</b>
                 </div>
                 <div class="panel-body">
                     <c:forEach var="jobForFrilancer" items="${jobsForFrilancer}" varStatus="status">
@@ -131,7 +131,7 @@
                     <div class="pull-right hidden-xs">
                         <a href="/jsp/forum/">All forums themes</a>
                     </div>
-                    <b class="h3">Обсуждения в форуме</b>
+                    <b class="h3">Themes on forum</b>
                 </div>
                 <div class="panel-body">
                     <c:forEach var="forumTheme" items="${forumThemes}">
@@ -155,7 +155,7 @@
         <div class="col-sm-4 right-sidebar">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Реклама фрилансеров</b>
+                    <b class="h3">Advertising</b>
                 </div>
                 <div class="panel-body">
                     <c:set var="advertising" value="${advertising}" scope="page"></c:set>
@@ -169,13 +169,10 @@
                     </div>
                     ${advertising.description}
                 </div>
-                <div class="panel-footer">
-                    <a href="#">Как разместить здесь рекламу »</a>
-                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">ТОП-10 фрилансеров</b>
+                    <b class="h3">Frilancers TOP</b>
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
@@ -192,16 +189,16 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <b class="h3">Статистика сервиса</b>
+                    <b class="h3">Stats</b>
                 </div>
                 <div class="panel-body">
                     <c:set var="stats" value="${stats}" scope="page"></c:set>
                     <p><kbd>${stats.open}</kbd></p>
-                    <p class="text-muted">открытый заказ</p>
+                    <p class="text-muted">opened</p>
                     <p><kbd>${stats.complete}</kbd></p>
-                    <p class="text-muted">выполненный заказ</p>
+                    <p class="text-muted">closea</p>
                     <p><kbd>${stats.users}</kbd></p>
-                    <p class="text-muted">пользователей сервиса</p>
+                    <p class="text-muted">services</p>
                 </div>
             </div>
         </div>
@@ -209,7 +206,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 style="text-align: center">Frilancer.com — лучший русскоязычный сайт для удаленной работы</h3>
+            <h3 style="text-align: center">Frilancer.com — the best site for frilance</h3>
         </div>
         <div class="panel-body">
             <div class="row">

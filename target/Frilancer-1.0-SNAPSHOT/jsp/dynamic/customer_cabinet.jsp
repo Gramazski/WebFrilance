@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#moreData">Open Modal</button>
+                            <button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#moreData">Edit</button>
                         </div>
                     </div>
                 </div>

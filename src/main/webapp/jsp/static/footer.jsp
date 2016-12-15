@@ -5,22 +5,22 @@
             <div class="col-xs-6 col-sm-4">
                 <div class="spacer-20">
                     <span class="hidden-xs hidden-sm hidden-md">
-                        <a href="../../index.jsp" rel="nofollow">Главная страница</a>
+                        <a href="../../index.jsp" rel="nofollow">Main</a>
                         <span class="divider text-muted">•</span>
                     </span>
-                    <a href="/terms/">Правила сервиса</a>
+                    <a href="#">ServicrRules</a>
                     <span class="hidden-xs">
                         <span class="divider text-muted">•</span>
-                        <a href="/tariffs/">Тарифы</a>
+                        <a href="#">Tarifs</a>
                     </span>
                 </div>
             </div>
             <div class="col-sm-4 text-center social_links hidden-xs">
-                <div class="text-muted spacer-10 hidden-xs hidden-sm">Присоединяйтесь к нам!</div>
+                <div class="text-muted spacer-10 hidden-xs hidden-sm">Added to us!</div>
             </div>
             <div class="col-xs-6 col-sm-4 text-right">
                 <div>
-                    <a href="/support/">Служба поддержки</a>
+                    <a href="/support/">Help service</a>
                 </div>
             </div>
         </div>

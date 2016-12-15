@@ -37,7 +37,7 @@
         <hr style="margin-top: 2%; margin-bottom: 2%">
         <ul class="breadcrumb">
             <li><a href="/index.jsp">Main</a></li>
-            <li class="active">Удаленная работа</li>
+            <li class="active">Work</li>
         </ul>
     </div>
 
@@ -86,25 +86,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="pull-right hidden-xs">
-                        <p class="text-muted">3.5k</p>
+                        <p class="text-muted">4</p>
                     </div>
-                    <b class="h3">Все категории</b>
-                </div>
-                <div class="panel-body">
-                    <c:forEach var="category" items="${categories}">
-                        <div class="pull-right hidden-xs">
-                            <p class="text-muted">${category.visitingCount}</p>
-                        </div>
-                        <p><a href="${category.link}">${category.name}</a></p>
-                    </c:forEach>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="pull-right hidden-xs">
-                        <p class="text-muted">117</p>
-                    </div>
-                    <b class="h3">Все заказы</b>
+                    <b class="h3">All orders</b>
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
@@ -119,9 +103,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="pull-right hidden-xs">
-                        <p class="text-muted">500</p>
+                        <p class="text-muted">4</p>
                     </div>
-                    <b class="h3">Открытые</b>
+                    <b class="h3">Opened</b>
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">

@@ -21,7 +21,7 @@
         <c:remove var="pageCreationFlag"></c:remove>
         <div class="row">
             <div class="col-sm-8">
-                <h2 style="margin-top: -5px">Форум фриланс-сообщества</h2>
+                <h2 style="margin-top: -5px">Forum</h2>
             </div>
             <div class="col-sm-4">
                 <a href="#pictData" data-toggle="modal" data-target="#pictData" style="width: 100%" class="btn btn-large btn-success"> Create theme</a>
@@ -105,7 +105,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Add theme</h4>
             </div>
             <div class="modal-body">
 
@@ -114,7 +114,7 @@
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="email">Title:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="country" name="country" placeholder="Enter country">
+                            <input type="text" class="form-control" id="country" name="title" placeholder="Enter title">
                         </div>
                     </div>
                     <div class="form-group">
